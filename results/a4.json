@@ -1,0 +1,154 @@
+{
+ "bat_speed": {
+  "step50": {
+   "actual": {
+    "hitters": 214,
+    "median_pairs": 24.0,
+    "pooled_slope": [
+     0.37455126224578184,
+     0.013132009643275077
+    ],
+    "mean_slope_ivw": 0.3645703455938511,
+    "tau_dl": 0.11390379493207112,
+    "tau_mm": 0.10188533704562687,
+    "median_se": 0.1928794817416391,
+    "reliability_median_hitter": 0.25856838688817113,
+    "Q": 291.8175221411956,
+    "df": 213,
+    "n_credibly_different": 2,
+    "sd_raw_slopes": 0.222921586675991,
+    "mixed_model_slope_sd": 0.12505024577554194,
+    "mixed_model_fixed_slope": 0.36535580207695795
+   },
+   "null": {
+    "hitters": 215,
+    "median_pairs": 24.0,
+    "pooled_slope": [
+     0.12390697788308175,
+     0.012873048544191471
+    ],
+    "mean_slope_ivw": 0.10597103548797548,
+    "tau_dl": 0.05468226770693953,
+    "tau_mm": 0.0,
+    "median_se": 0.20795904316385203,
+    "reliability_median_hitter": 0.06466991861337046,
+    "Q": 229.28589989833478,
+    "df": 214,
+    "n_credibly_different": 0,
+    "sd_raw_slopes": 0.210372025407454
+   }
+  },
+  "step100": {
+   "actual": {
+    "hitters": 80,
+    "median_pairs": 16.0,
+    "pooled_slope": [
+     0.381994003045801,
+     0.017174361915559253
+    ],
+    "mean_slope_ivw": 0.3501874937762297,
+    "tau_dl": 0.15408632730948288,
+    "tau_mm": 0.1081047295460277,
+    "median_se": 0.22827364971280312,
+    "reliability_median_hitter": 0.3130143796611473,
+    "Q": 121.2935273443365,
+    "df": 79,
+    "n_credibly_different": 1,
+    "sd_raw_slopes": 0.26057036197261496
+   },
+   "null": {
+    "hitters": 80,
+    "median_pairs": 16.0,
+    "pooled_slope": [
+     0.11071164148179481,
+     0.01848626528366584
+    ],
+    "mean_slope_ivw": 0.08156880216489322,
+    "tau_dl": 0.18045923776627182,
+    "tau_mm": 0.17015579507892623,
+    "median_se": 0.26839602186697503,
+    "reliability_median_hitter": 0.31132816410455244,
+    "Q": 119.05284352913623,
+    "df": 79,
+    "n_credibly_different": 1,
+    "sd_raw_slopes": 0.3311595553847276
+   }
+  }
+ },
+ "woba": {
+  "step50": {
+   "actual": {
+    "hitters": 214,
+    "median_pairs": 24.0,
+    "pooled_slope": [
+     0.11278702311272497,
+     0.013015270499161442
+    ],
+    "mean_slope_ivw": 0.10139506499599639,
+    "tau_dl": 0.053140584206132685,
+    "tau_mm": 0.0,
+    "median_se": 0.20064618170264623,
+    "reliability_median_hitter": 0.06554636440412888,
+    "Q": 227.7274725520507,
+    "df": 213,
+    "n_credibly_different": 0,
+    "sd_raw_slopes": 0.20648838650560183,
+    "mixed_model_slope_sd": 0.07727240419532691,
+    "mixed_model_fixed_slope": 0.11395723824695976
+   },
+   "null": {
+    "hitters": 215,
+    "median_pairs": 24.0,
+    "pooled_slope": [
+     0.11555256966351661,
+     0.012158276625042033
+    ],
+    "mean_slope_ivw": 0.09572268381007926,
+    "tau_dl": 0.07872384065830441,
+    "tau_mm": 0.052528958113730824,
+    "median_se": 0.20390222793843923,
+    "reliability_median_hitter": 0.12972537266289713,
+    "Q": 246.2297362481619,
+    "df": 214,
+    "n_credibly_different": 0,
+    "sd_raw_slopes": 0.22011625164347798
+   }
+  },
+  "step100": {
+   "actual": {
+    "hitters": 80,
+    "median_pairs": 16.0,
+    "pooled_slope": [
+     0.13650411550592972,
+     0.017823967287502893
+    ],
+    "mean_slope_ivw": 0.1609852769424445,
+    "tau_dl": 0.15594272282053795,
+    "tau_mm": 0.11453432284641799,
+    "median_se": 0.2428121201973974,
+    "reliability_median_hitter": 0.2920189984733066,
+    "Q": 117.48271372476752,
+    "df": 79,
+    "n_credibly_different": 2,
+    "sd_raw_slopes": 0.2764066895269112
+   },
+   "null": {
+    "hitters": 80,
+    "median_pairs": 16.0,
+    "pooled_slope": [
+     0.12641861360923706,
+     0.018393978968497454
+    ],
+    "mean_slope_ivw": 0.13673509665725317,
+    "tau_dl": 0.053889781859425584,
+    "tau_mm": 0.0,
+    "median_se": 0.2632324787114844,
+    "reliability_median_hitter": 0.04022564762962781,
+    "Q": 82.68160275457095,
+    "df": 79,
+    "n_credibly_different": 0,
+    "sd_raw_slopes": 0.26690908442428335
+   }
+  }
+ }
+}

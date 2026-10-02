@@ -1,0 +1,134 @@
+{
+ "swing_len": {
+  "slope_actual": 0.37261893371268845,
+  "se_actual": 0.013711509228416578,
+  "null_mean": 0.11977684690133941,
+  "null_sd_across_shuffles": 0.008808203105946034,
+  "persistence_mean_null": 0.252842086811349,
+  "persistence_range": [
+   0.23836794096616445,
+   0.27099843934638157
+  ]
+ },
+ "bat_speed": {
+  "slope_actual": 0.37419380306389444,
+  "se_actual": 0.012069174644423858,
+  "null_mean": 0.11435033483646898,
+  "null_sd_across_shuffles": 0.009695697289697146,
+  "persistence_mean_null": 0.25984346822742543,
+  "persistence_range": [
+   0.24698822438554868,
+   0.28347455520688647
+  ]
+ },
+ "fast_swing": {
+  "slope_actual": 0.3423426497983653,
+  "se_actual": 0.01408370754744207,
+  "null_mean": 0.11475535034304007,
+  "null_sd_across_shuffles": 0.009413037542419386,
+  "persistence_mean_null": 0.22758729945532524,
+  "persistence_range": [
+   0.2097656039677023,
+   0.24273445900237473
+  ]
+ },
+ "z_swing": {
+  "slope_actual": 0.23889121264894692,
+  "se_actual": 0.01093449001439238,
+  "null_mean": 0.11671824098018391,
+  "null_sd_across_shuffles": 0.011410951051554496,
+  "persistence_mean_null": 0.12217297166876301,
+  "persistence_range": [
+   0.09354077174872019,
+   0.14194923335018725
+  ]
+ },
+ "chase": {
+  "slope_actual": 0.18890962355129057,
+  "se_actual": 0.010381648108772646,
+  "null_mean": 0.11535977168147069,
+  "null_sd_across_shuffles": 0.007223478289957759,
+  "persistence_mean_null": 0.07354985186981988,
+  "persistence_range": [
+   0.05828464739290212,
+   0.0888430101021099
+  ]
+ },
+ "whiff": {
+  "slope_actual": 0.1377935030107687,
+  "se_actual": 0.009584456744076486,
+  "null_mean": 0.11752820412728186,
+  "null_sd_across_shuffles": 0.010917727245775647,
+  "persistence_mean_null": 0.02026529888348684,
+  "persistence_range": [
+   0.004117181459136532,
+   0.043208521064300634
+  ]
+ },
+ "barrel": {
+  "slope_actual": 0.1516571470430896,
+  "se_actual": 0.010191351232958806,
+  "null_mean": 0.11175747180673226,
+  "null_sd_across_shuffles": 0.009574155260150636,
+  "persistence_mean_null": 0.039899675236357346,
+  "persistence_range": [
+   0.022859868108619674,
+   0.061134320556620506
+  ]
+ },
+ "k_rate": {
+  "slope_actual": 0.160441637136681,
+  "se_actual": 0.01030848292486886,
+  "null_mean": 0.11753431900731451,
+  "null_sd_across_shuffles": 0.009773811595504448,
+  "persistence_mean_null": 0.04290731812936649,
+  "persistence_range": [
+   0.02332075074166068,
+   0.060996904457465015
+  ]
+ },
+ "ev": {
+  "slope_actual": 0.14119505622561845,
+  "se_actual": 0.010212238114086777,
+  "null_mean": 0.11827734452741039,
+  "null_sd_across_shuffles": 0.009843342476750394,
+  "persistence_mean_null": 0.022917711698208068,
+  "persistence_range": [
+   0.002338148439990667,
+   0.03810293603932266
+  ]
+ },
+ "xwoba": {
+  "slope_actual": 0.13256109364008725,
+  "se_actual": 0.01018296351988078,
+  "null_mean": 0.11295913406693088,
+  "null_sd_across_shuffles": 0.01230454867012978,
+  "persistence_mean_null": 0.01960195957315637,
+  "persistence_range": [
+   -0.0037985455301344784,
+   0.049369249097838394
+  ]
+ },
+ "hard_hit": {
+  "slope_actual": 0.11847152296530326,
+  "se_actual": 0.009595877627737733,
+  "null_mean": 0.11937738123064434,
+  "null_sd_across_shuffles": 0.00724209147242007,
+  "persistence_mean_null": -0.0009058582653410779,
+  "persistence_range": [
+   -0.012464649081134635,
+   0.010318052928102839
+  ]
+ },
+ "woba": {
+  "slope_actual": 0.12173830079991531,
+  "se_actual": 0.009912885585968105,
+  "null_mean": 0.11840200158065169,
+  "null_sd_across_shuffles": 0.009042607578821294,
+  "persistence_mean_null": 0.003336299219263622,
+  "persistence_range": [
+   -0.0170130470837377,
+   0.016075673121469236
+  ]
+ }
+}

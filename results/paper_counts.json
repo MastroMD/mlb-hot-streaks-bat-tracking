@@ -1,0 +1,38 @@
+{
+ "n_pa": 544324,
+ "n_games": 7288,
+ "n_games_by_season": {
+  "2024": 2429,
+  "2025": 2430,
+  "2026": 2429
+ },
+ "n_pitchers": 1310,
+ "n_tracked_swings": 979233,
+ "n_competitive_swings": 885240,
+ "n_batter_games": 147109,
+ "first_tracked_date": {
+  "2024": "2024-04-03",
+  "2025": "2025-03-18",
+  "2026": "2026-03-25"
+ },
+ "first_game_date": {
+  "2024": "2024-03-20",
+  "2025": "2025-03-18",
+  "2026": "2026-03-25"
+ },
+ "n_hitter_seasons_300pa": 826,
+ "n_hitters_300pa": 420,
+ "persistence_sample_bat_speed": {
+  "n_points": 83880,
+  "n_hitters": 420,
+  "n_hitter_seasons": 826
+ },
+ "min_n": {
+  "pa": 1,
+  "comp": 30,
+  "outzone": 40,
+  "inzone": 40,
+  "swing": 30,
+  "bip": 15
+ }
+}

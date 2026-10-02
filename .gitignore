@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+statcast_hotstreak/
+sim_hot/
+sim_null/
+out_main/
+out3/
+*.parquet

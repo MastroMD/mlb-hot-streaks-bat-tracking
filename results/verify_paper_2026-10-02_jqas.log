@@ -1,0 +1,38 @@
+2,141,219 pitches
+PASS pitch count  2141219 vs 2141219
+PASS platoon LHB  26.490 vs 26.490
+PASS platoon RHB  10.353 vs 10.353
+PASS actual slope bat_speed  0.37419380 vs 0.37419380 (n=83880)
+PASS actual slope swing_len  0.37261893 vs 0.37261893 (n=83880)
+PASS actual slope fast_swing  0.34234265 vs 0.34234265 (n=83880)
+PASS actual slope woba  0.12173830 vs 0.12173830 (n=83899)
+PASS persistence bat_speed  0.2568 vs 0.2598
+PASS persistence swing_len  0.2578 vs 0.2528
+PASS persistence fast_swing  0.2309 vs 0.2276
+PASS persistence woba  0.0006 vs 0.0033
+PASS swing top decile  8.41 (3.19) vs 8.41 (3.19)
+PASS swing bottom decile  -7.87 (2.90) vs -7.87 (2.90)
+PASS results top decile  3.43 (2.56) vs 3.43 (2.56)
+PASS results bottom decile  -1.09 (2.65) vs -1.09 (2.65)
+PASS stale-value scan  numbers in abstract not in paper_results.json: []
+PASS abstract word count < 500  495 words (title + body, table excluded)
+PASS A11b offseason carry-over b  0.3436 vs 0.3436 (n=481 vs 481)
+PASS A11a(ii) R_next  0.5182 vs 0.5182 (n=508 vs 508)
+PASS 200-PA horizon in weeks  8.86 weeks (n=51958) vs 9
+PASS B3 per-pair table, prespecified  4781 decisions in 61 pairs; ride-hotter -0.1946 runs/50 PA, form flips 0.0525, own split changes 0.0623
+PASS B3 per-pair table, refined_exploratory  1270 decisions in 19 pairs; ride-hotter -0.1326 runs/50 PA, form flips 0.0339, own split changes 0.0575
+PASS abstract block unchanged  93fc915627b12146
+PASS paper stale-value scan, SSAC27_paper_hot_streaks.docx  numbers in the paper not in paper_results.json['paper']: []
+PASS paper placeholders filled, SSAC27_paper_hot_streaks.docx  []
+PASS no colons or semicolons in body prose, SSAC27_paper_hot_streaks.docx  0 paragraphs: []
+INFO SSAC27_paper_hot_streaks.docx: Results-text numbers that also appear in a table: 117 of 295 (house rule 2A reports this count)
+PASS paper stale-value scan, JQAS_hot_streaks_manuscript.docx  numbers in the paper not in paper_results.json['paper']: []
+PASS paper placeholders filled, JQAS_hot_streaks_manuscript.docx  []
+PASS no colons or semicolons in body prose, JQAS_hot_streaks_manuscript.docx  0 paragraphs: []
+INFO JQAS_hot_streaks_manuscript.docx: Results-text numbers that also appear in a table: 117 of 300 (house rule 2A reports this count)
+PASS paper stale-value scan, JQAS_hot_streaks_online_appendix.docx  numbers in the paper not in paper_results.json['paper']: []
+PASS paper placeholders filled, JQAS_hot_streaks_online_appendix.docx  []
+PASS no colons or semicolons in body prose, JQAS_hot_streaks_online_appendix.docx  0 paragraphs: []
+INFO JQAS_hot_streaks_online_appendix.docx: Results-text numbers that also appear in a table: 0 of 0 (house rule 2A reports this count)
+
+ALL CHECKS PASSED
