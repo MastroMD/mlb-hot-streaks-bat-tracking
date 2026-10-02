@@ -25,10 +25,10 @@ PASS abstract block unchanged  93fc915627b12146
 PASS paper stale-value scan, SSAC27_paper_hot_streaks.docx  numbers in the paper not in paper_results.json['paper']: []
 PASS paper placeholders filled, SSAC27_paper_hot_streaks.docx  []
 PASS no colons or semicolons in body prose, SSAC27_paper_hot_streaks.docx  0 paragraphs: []
-INFO SSAC27_paper_hot_streaks.docx: Results-text numbers that also appear in a table: 117 of 295 (house rule 2A reports this count)
+INFO SSAC27_paper_hot_streaks.docx: Results-text numbers that also appear in a table: 126 of 323 (house rule 2A reports this count)
 PASS paper stale-value scan, JQAS_hot_streaks_manuscript.docx  numbers in the paper not in paper_results.json['paper']: []
 PASS paper placeholders filled, JQAS_hot_streaks_manuscript.docx  []
 PASS no colons or semicolons in body prose, JQAS_hot_streaks_manuscript.docx  0 paragraphs: []
-INFO JQAS_hot_streaks_manuscript.docx: Results-text numbers that also appear in a table: 117 of 295 (house rule 2A reports this count)
+INFO JQAS_hot_streaks_manuscript.docx: Results-text numbers that also appear in a table: 126 of 323 (house rule 2A reports this count)
 
 ALL CHECKS PASSED

@@ -3,7 +3,7 @@
 python3 make_paper_block.py RESULTS_DIR [COMPANION_SYNTHESIS_JSON]
 
 RESULTS_DIR holds paper_results.json and the files it was merged from (a11.json, b3.json, a7_pairs.csv,
-results_adjusted.json, paper_counts.json). Every number the paper's text and tables print is formatted here, once, and
+results_adjusted.json, paper_counts.json, e_review.json, e_audit.json). Every number the paper's text and tables print is formatted here, once, and
 stored as a string with the key it came from. build_paper.py fills its template from this block and never computes a
 number. The script leaves every other block of paper_results.json unchanged and stops if the abstract block's hash has
 moved. COMPANION_SYNTHESIS_JSON is the companion paper's results file; without it the values stored by an earlier run
@@ -80,7 +80,7 @@ DESIGN = {"min_comp": cn["min_n"]["comp"], "min_zone": cn["min_n"]["inzone"], "m
           "a11_fit_share_pct": 60, "cp_min_games": 20, "a6_min_pa": 10, "a4_min_pairs": 15, "a2_regular_pa": 400,
           "a10_days_short": 14, "a10_days_long": 28, "a10_drop_days": 30,
           "sim_hitters": 160, "sim_games": 150, "cp_min_swings": 5, "pull_date": "2026-09-30",
-          "sim_woba_pts": 12}
+          "sim_quality_pts": 12, "savant_bt_first_season": "2023", "sim_bs_mph": 0.8, "sim_chase_pp": 2}
 for k, v in DESIGN.items():
     put(f"d_{k}", f"{v:,}" if isinstance(v, int) else f"{v}", f"design.{k}")
 
@@ -95,8 +95,12 @@ put("null_mc_sd_bs", num(100 * PERS["bat_speed"]["null_sd_across_shuffles"], 1),
 nulls = [v["null_mean_20"] for v in PERS.values()]
 put("null_lo", num(min(nulls), 2), "primary.persistence.*.null_mean_20 (min)")
 put("null_hi", num(max(nulls), 2), "primary.persistence.*.null_mean_20 (max)")
+put("n_metrics20", cnt(len(nulls)), "primary.persistence (metrics with a 20-shuffle null)")
 
 RA = J("results_adjusted.json")
+for _k, _v in RA.items():                           # analysis2.py writes [target]["forms"]; the shipped file uses "woba_forms"
+    if isinstance(_v, dict) and "woba_forms" not in _v and isinstance(_v.get("woba"), dict) and "forms" in _v["woba"]:
+        _v["woba_forms"] = _v["woba"]["forms"]
 LABEL = {"swing_len": "Swing length", "bat_speed": "Bat speed", "fast_swing": "Fast-swing rate", "z_swing": "In-zone swing rate",
          "chase": "Chase rate", "whiff": "Whiff rate", "barrel": "Barrel rate", "k_rate": "Strikeout rate", "ev": "Exit velocity",
          "xwoba": "xwOBA", "hard_hit": "Hard-hit rate", "woba": "wOBA"}
@@ -124,6 +128,9 @@ for m4, (lab4, grp4) in LABEL4.items():
                        f"{pct(win['rec25_fwd25'][m4]['persistence'])} {se_(100 * win['rec25_fwd25'][m4]['se'])}",
                        f"{pct(win['rec100_fwd50'][m4]['persistence'])} {se_(100 * win['rec100_fwd50'][m4]['se'])}"])
 put("p_extra4_max", pct(max(w5050[m]["persistence"] for m in LABEL4)), "results_adjusted.rec50_fwd50 (squared_up, blast, xwobacon, bb_rate) max")
+put("null1_lo", num(min(w5050[m]["slope_null"] for m in LABEL4), 2), "results_adjusted.rec50_fwd50 (four single-shuffle metrics) slope_null min")
+put("null1_hi", num(max(w5050[m]["slope_null"] for m in LABEL4), 2), "results_adjusted.rec50_fwd50 (four single-shuffle metrics) slope_null max")
+put("p_whiff", pct(PERS["whiff"]["persistence"]), "primary.persistence.whiff.persistence")
 T1["n_points_note"] = cnt(ps["n_points"])
 put("t1_n_points", cnt(ps["n_points"]), "paper_counts.persistence_sample_bat_speed.n_points")
 put("t1_n_hitters", cnt(ps["n_hitters"]), "paper_counts.persistence_sample_bat_speed.n_hitters")
@@ -146,8 +153,8 @@ put("alb_n_bs", cnt(bsr["n_hitter_seasons"]), "A9.albright_runs.bat_speed_above_
 EV = J("e_review.json")
 gz1 = a9["green_zwiebel"]["null_corrected"]                  # prespecified A9: one shuffle
 gz = EV["E2_green_zwiebel_20_shuffles"]                       # exploratory refinement: 20 shuffles (plan addendum E)
-put("gz1_bs_cold_woba", sgn(gz1["bat_speed"]["woba"]["cold"]), "e_review.E2_green_zwiebel_20_shuffles.bat_speed.woba.cold (one shuffle)")
-put("gz1_bs_cold_woba_se", num(gz1["bat_speed"]["woba"]["cold_se"]), "e_review.E2 ... cold_se (one shuffle)")
+put("gz1_bs_cold_woba", sgn(gz1["bat_speed"]["woba"]["cold"]), "A9.green_zwiebel.null_corrected.bat_speed.woba.cold (prespecified, one shuffle)")
+put("gz1_bs_cold_woba_se", num(gz1["bat_speed"]["woba"]["cold_se"]), "A9.green_zwiebel.null_corrected.bat_speed.woba.cold_se (one shuffle)")
 G = lambda d, o: gz[d][o]
 ob_raw_gap = G("onb", "onb")["hot_raw"] - G("onb", "onb")["cold_raw"]
 ob_cor_gap = G("onb", "onb")["hot"] - G("onb", "onb")["cold"]
@@ -188,7 +195,7 @@ TREC["albright"] = [["On-base sequence by PA", cnt(ob["n_hitter_seasons"]), num(
                    f"{sgn(ob['mean_diff'], 2)} {se_(ob['se_diff'], 2)}"],
                   ["Bat speed above own median, by swing", cnt(bsr["n_hitter_seasons"]), num(bsr["mean_z"], 2),
                    num(bsr["mean_z_game_shuffle"], 2), f"{sgn(bsr['mean_diff'], 2)} {se_(bsr['se_diff'], 2)}"]]
-TREC["albright_header"] = ["Runs test (Albright 1993)", "Hitter-seasons", "Mean z", "Mean z, game shuffle", "Difference (SE)"]
+TREC["albright_header"] = ["Runs test (Albright, 1993)", "Hitter-seasons", "Mean z", "Mean z, game shuffle", "Difference (SE)"]
 
 # ------------------------------------------------------------------ 4.2 value (Table 2)
 forms = P["primary"]["forms"]
@@ -290,7 +297,7 @@ put("extreme_vs_rhb", pct((float(A["top_swing"]) + float(A["bot_swing"])) / 2 / 
 put("extreme_vs_lhb", pct((float(A["top_swing"]) + float(A["bot_swing"])) / 2 / P["primary"]["platoon"]["LHB_league_split_pts"], 0),
     "abstract extreme / primary.platoon.LHB_league_split_pts")
 
-TDEC = {"header": ["Rule", "Calls changed vs strict platoon", "Expected runs per 50 PA vs strict platoon",
+TDEC = {"header": ["Rule", "Calls changed", "Expected runs per 50 PA",
                  "Per-pair median (p10 to p90)", "Calls changed (refined pairs, exploratory)", "Expected runs (refined pairs, exploratory)"],
       "rows": []}
 ppr = lambda b, k: f"{num(b['per_pair_p10_p50_p90'][k][1], 2)} ({num(b['per_pair_p10_p50_p90'][k][0], 2)} to {num(b['per_pair_p10_p50_p90'][k][2], 2)})"
@@ -535,7 +542,7 @@ put("bs_state_sd", num(math.sqrt(PERS["bat_speed"]["persistence"] * sdb ** 2), 2
 Hs = [25, 50, 100, 150, 200]
 Pv = {h: fx[str(h)]["bat_speed"]["persistence"] for h in Hs}
 for lo_, hi_ in zip(Hs[:-1], Hs[1:]):
-    put(f"blk_bs_{lo_ + 1}_{hi_}", pct((hi_ * Pv[hi_] - lo_ * Pv[lo_]) / (hi_ - lo_)), f"A1 fixed-sample block increment ({lo_},{hi_}], E1")
+    put(f"blk_bs_{lo_ + 1}_{hi_}", pct((hi_ * Pv[hi_] - lo_ * Pv[lo_]) / (hi_ - lo_), 0), f"A1 fixed-sample block increment ({lo_},{hi_}], E1")
 
 
 def cochran(est):
@@ -553,17 +560,26 @@ put("q_top", num(qt[0]), "Cochran Q, A10 season swing-form top deciles, E1")
 put("q_top_p", num(qt[1], 3), "Cochran Q p (df 2)")
 A3B = lambda s_: [b for b in a3[s_] if isinstance(a3[s_][b], dict) and "results_only" in a3[s_][b]]
 SPECS = ("w100_100", "days14_14", "days28_28", "competitive_filter_off", "park_week_adjustment_off")
+DUP = ("primary_sample", "history_only")          # the primary model itself (identical estimate); counted once
+if abs(a3[DUP[0]][DUP[1]]["results_only"]["top"] - rs["deciles"]["bump"][9]) > 1e-9:
+    sys.exit("primary-sample history-only model is not the primary model")
 rt = [(rs["deciles"]["bump"][9], rs["deciles"]["se"][9])] + [(a3[s_][b]["results_only"]["top"], a3[s_][b]["results_only"]["top_se"])
-                                                              for s_ in a3 for b in A3B(s_)]
+                                                              for s_ in a3 for b in A3B(s_) if (s_, b) != DUP]
 rt += [(a10[k]["results_form"]["top"], a10[k]["results_form"]["top_se"]) for k in SPECS]
-put("res_top_n", cnt(len(rt)), "wOBA-streak top decile specifications (as abstract.res_top_lo/hi)")
+put("res_top_n", cnt(len(rt)), "wOBA-streak top decile: primary, A3 (8 projection baselines, enlarged-sample history only), A10 (5); distinct models")
+if num(min(v for v, _ in rt)) != A["res_top_lo"] or num(max(v for v, _ in rt)) != A["res_top_hi"]:
+    sys.exit("wOBA-streak top-decile range differs from the abstract set")
 put("res_top_pos", cnt(sum(v > 0 for v, _ in rt)), "count positive, E1")
 put("res_top_2se", cnt(sum(v / se >= 2 for v, se in rt)), "count >= 2 SE, E1")
 stp = [sw["deciles"]["bump"][9], a2["ipw"]["top"], a2["cross_season"]["top"], a2["regulars_400pa"]["top"]]
-stp += [a3[s_][b]["swing_only"]["top"] for s_ in a3 for b in A3B(s_)]
+stp += [a3[s_][b]["swing_only"]["top"] for s_ in a3 for b in A3B(s_) if (s_, b) != DUP]
 stp += [a10[k]["swing_form"]["top"] for k in SPECS]
-put("swing_top_lo", num(min(stp)), "swing-form top decile over the abstract's specification set (min)")
-put("swing_top_hi", num(max(stp)), "swing-form top decile over the abstract's specification set (max)")
+stp += [RA["rec100_fwd50"]["woba_forms"]["swing_only"]["deciles"]["bump"][9]]   # Table A1 row 100 PA -> 50 PA (audit)
+sbt = -RA["rec100_fwd50"]["woba_forms"]["swing_only"]["deciles"]["bump"][0]
+if not (float(A["spec_bot_lo"]) <= round(sbt, 1) <= float(A["spec_bot_hi"])):
+    sys.exit("100 PA -> 50 PA bottom decile outside the stated bottom-decile range")
+put("swing_top_lo", num(min(stp)), "swing-form top decile over the abstract's specification set plus 100 PA -> 50 PA (min)")
+put("swing_top_hi", num(max(stp)), "swing-form top decile over the abstract's specification set plus 100 PA -> 50 PA (max)")
 for k, tag in (("rec25_fwd25", "w2525"), ("rec50_fwd25", "w5025")):
     d_ = RA[k]["woba_forms"]["swing_only"]["deciles"]
     put(f"{tag}_bot", sgn(d_["bump"][0]), f"results_adjusted.{k}.woba_forms.swing_only.deciles.bump[0]")
@@ -584,18 +600,55 @@ for tag, key in (("pre", "prespecified"), ("ref", "refined_exploratory")):
     put(f"e3_b_n_{tag}", cnt(e["b_changed_n"]), f"e_review.E3_lineups.{key}.b_changed_n")
     put(f"e3_b_real_{tag}", sgn(e["b_realised_minus_platoon_pick_pts"][0]), f"e_review.E3_lineups.{key}.b_realised_minus_platoon_pick_pts[0]")
     put(f"e3_b_real_se_{tag}", num(e["b_realised_minus_platoon_pick_pts"][1]), f"e_review.E3_lineups.{key}.b_realised_minus_platoon_pick_pts[1]")
+    if e["b_realised_minus_platoon_pick_pts"][0] < 0:     # printed as "x points worse"
+        put(f"e3_b_worse_{tag}", num(-e["b_realised_minus_platoon_pick_pts"][0]), f"e_review.E3_lineups.{key}.b_realised_minus_platoon_pick_pts[0] (sign flipped)")
     put(f"e3_top_share_{tag}", pct(e["largest_team_season_share"], 0), f"e_review.E3_lineups.{key}.largest_team_season_share")
     put(f"e3_max_pairs_{tag}", cnt(e["max_pairs_per_hitter"]), f"e_review.E3_lineups.{key}.max_pairs_per_hitter")
 WN = {"a_none": "the world with no state", "b_hl50": "the 50-PA autoregressive world", "b_hl150": "the 150-PA autoregressive world",
       "b_hl400": "the 400-PA autoregressive world", "c_step": "the lasting-step world", "d_mix": "the mixed world"}
 put("a11_closest", WN[a11["decision"]["primary"]["closest_world"]], "a11.decision.primary.closest_world")
 
+# ------------------------------------------------------------------ additions after the accuracy audit (e_audit.py; exploratory where new)
+import math as _m  # noqa: E402
+EA = J("e_audit.json")
+F2 = EA["F2_simulator"]
+put("sim_woba_eff", num(F2["woba_pts_per_sd"], 0), "e_audit.F2_simulator.woba_pts_per_sd")
+for tag, key in (("pre", "prespecified"), ("ref", "refined_exploratory")):
+    f1 = EA["F1_lineup_inputs"][key]
+    put(f"f1_prev_share_{tag}", pct(f1["share_either_row_previous_season"], 0), f"e_audit.F1_lineup_inputs.{key}.share_either_row_previous_season")
+    put(f"f1_lag_old_med_{tag}", f"{f1['lag_days_older_row_median_p90'][0]:.0f}", f"e_audit.F1_lineup_inputs.{key}.lag_days_older_row_median_p90[0]")
+    put(f"f1_old7_share_{tag}", pct(f1["share_older_row_over_7_days"], 0), f"e_audit.F1_lineup_inputs.{key}.share_older_row_over_7_days")
+    for sub, st_ in (("same_season_rows", "same"), ("same_season_rows_within_7_days", "fresh")):
+        g_ = f1[sub]
+        put(f"f1_{st_}_n_{tag}", cnt(g_["n_decisions"]), f"e_audit.F1_lineup_inputs.{key}.{sub}.n_decisions")
+        put(f"f1_{st_}_b_{tag}", num(-g_["runs_b"], 2), f"e_audit.F1_lineup_inputs.{key}.{sub}.runs_b (sign flipped)")
+        put(f"f1_{st_}_c0_{tag}", num(g_["runs_c0"], 2), f"e_audit.F1_lineup_inputs.{key}.{sub}.runs_c0")
+        put(f"f1_{st_}_c_{tag}", num(g_["runs_c"], 2), f"e_audit.F1_lineup_inputs.{key}.{sub}.runs_c")
+if not EA["F3_pa_count"]["equal"]:
+    sys.exit("panel PA count differs from paper_counts.n_pa")
+# separate estimates of the same 50 PA -> 50 PA bat-speed persistence (primary 20 shuffles, A10 5, A8 1, A1 fixed sample 10,
+# A1 changepoint sample)
+sep = {"primary": PERS["bat_speed"]["persistence"], "A10": a10["primary_50_50"]["persistence"]["bat_speed"]["persistence"],
+       "A8": pg["all"]["persistence"], "A1_fixed": fx["50"]["bat_speed"]["persistence"], "A1_changepoint": cp["before"]["persistence"]}
+put("sep_bs_lo", pct(min(sep.values())), "min over " + ", ".join(sep))
+put("sep_bs_hi", pct(max(sep.values())), "max over " + ", ".join(sep))
+put("sep_bs_gap", num(100 * (round(max(sep.values()), 3) - round(min(sep.values()), 3))), "sep_bs_hi - sep_bs_lo (percentage points)")
+nbs = [fx[h]["bat_speed"]["n"] for h in ("25", "50", "100", "150", "200")]
+put("fx_n_bs_lo", cnt(min(nbs)), "A1.horizons_fixed_sample.*.bat_speed.n (min)")
+put("fx_n_bs_hi", cnt(max(nbs)), "A1.horizons_fixed_sample.*.bat_speed.n (max)")
+nff = [pp5[m]["n"] for m in pp5 if m.startswith("ff_")]
+put("a5_ff_n_lo", cnt(min(nff)), "A5.persistence.ff_*.n (min)")
+put("a5_ff_n_hi", cnt(max(nff)), "A5.persistence.ff_*.n (max)")
+put("ipw_or_w", num(_m.exp(a2["ipw"]["logit"]["z_w"][0]), 2), "exp(A2.ipw.logit.z_w[0]), odds ratio per SD of recent wOBA deviation")
+put("a11_b_hl400", num(sig["b_hl400"]["b"]["mean"], 2), "A11.signature.b_hl400.b.mean")
+
 P["paper"] = {"meta": {"plan": "PLAN_ADDENDUM_2026-10-02d.md", "abstract_sha16": ABSTRACT_SHA16,
                        "inputs_sha16": {n: sha16(os.path.join(R, n)) for n in ("a11.json", "b3.json", "a7_pairs.csv", "e_review.json",
-                                                                                "results_adjusted.json", "paper_counts.json")},
+                                                                                "results_adjusted.json", "paper_counts.json", "e_audit.json")},
                        "plan_review": "PLAN_ADDENDUM_2026-10-02e.md (exploratory: E1 derived quantities, E2 20-shuffle Green-Zwiebel, E3 lineup checks)",
                        "exploratory": ["A7 refined pairing rule", "A11 (prespecified rule returned undetermined)", "plan addendum E (E1-E3)",
-                                       "A1 non-overlapping block autocorrelation", "A5 four-seam arm angle"]},
+                                       "A1 non-overlapping block autocorrelation", "A5 four-seam arm angle",
+                                       "e_audit F1 lineup-input age and restricted rule values (added after the accuracy audit)"]},
               "text": T, "source": SRC, "design": DESIGN,
               "tables": {"T1": T1, "T2": TREC, "T3": TFORM, "T4": TDEC, "TA1": TA1, "TA2": TA2},
               "companion": COMP}

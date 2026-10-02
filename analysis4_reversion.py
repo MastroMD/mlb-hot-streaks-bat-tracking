@@ -664,8 +664,12 @@ def merge():
         real_sig[f"decay_{fwd}"] = a1["horizons_fixed_sample"][fwd]["bat_speed"]["persistence"]
     for h in ("1", "2", "3", "4"):
         real_sig[f"R_within_{h}"] = real["A11a"]["within"][h]["pooled"]["R"]
-    out = {"meta": {"plan": "PLAN_ADDENDUM_2026-10-01c.md", "plan_sha16": sha16(PLAN), "built": time.strftime("%Y-%m-%d %H:%M"),
-                    "statcast_sha16": {y: sha16(os.path.join(DATA, f"statcast_{y}.parquet")) for y in (2024, 2025, 2026)},
+    yearly = [os.path.join(DATA, f"statcast_{y}.parquet") for y in (2024, 2025, 2026)]
+    out = {"meta": {"plan": "PLAN_ADDENDUM_2026-10-01c.md",
+                    # the plan file is kept with the authors; its recorded hash is used when it is not alongside the repo
+                    "plan_sha16": sha16(PLAN) if os.path.exists(PLAN) else "210effb2a9bd81ce", "built": time.strftime("%Y-%m-%d %H:%M"),
+                    "statcast_sha16": ({y: sha16(p) for y, p in zip((2024, 2025, 2026), yearly)} if all(map(os.path.exists, yearly)) else
+                                       {f: sha16(os.path.join(DATA, f)) for f in sorted(os.listdir(DATA)) if f.endswith(".parquet")}),
                     "statcast_source": "Statcast_Shared statcast_YYYY.parquet (regular-season rows, fetch_statcast KEEP columns); "
                                        "shared-cache files 65b82081ea38f1ea / 3c686658c711097d / 88660e24fe4a7b00",
                     "seeds": {"shuffles": SEEDS_SHUF, "bootstrap": SEED_BOOT, "simulations": SEED_SIM},

@@ -52,7 +52,7 @@ PERS = P["primary"]["persistence"]
 LABEL = {"swing_len": "Swing length", "bat_speed": "Bat speed", "fast_swing": "Fast-swing rate", "z_swing": "In-zone swing rate",
          "chase": "Chase rate", "whiff": "Whiff rate", "barrel": "Barrel rate", "k_rate": "Strikeout rate", "ev": "Exit velocity",
          "xwoba": "xwOBA", "hard_hit": "Hard-hit rate", "woba": "wOBA"}
-SWINGSIDE = {"swing_len", "bat_speed", "fast_swing", "z_swing", "chase"}
+SWINGSIDE = {"swing_len", "bat_speed", "fast_swing", "z_swing", "chase", "whiff"}
 
 
 def persistence_bars(ax, title=True):
@@ -143,7 +143,7 @@ a2.set_yticklabels([o[0] for o in opts], fontsize=8.5)
 a2.tick_params(axis="y", length=0)
 a2.set_ylim(-0.6, len(opts) - 0.4)
 a2.invert_yaxis()
-a2.set_xlabel("Expected runs per 50 PA vs strict platoon")
+a2.set_xlabel("Expected runs per 50 PA\nvs strict platoon")
 a2.grid(axis="x", color=GRID, lw=0.8, zorder=0)
 a2.set_title("B. Lineup rules")
 fig.tight_layout(w_pad=2.0)
@@ -169,7 +169,7 @@ ax.set_ylim(-3, 30)
 ax.set_xticks([0, 7, 14, 21, 28, 35, 42, 49, 56, 63])
 ax.set_xticklabels(["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
 ax.set_ylim(-3, 33)
-ax.set_xlabel("Weeks ahead (median calendar span of the forward window)")
+ax.set_xlabel("Median calendar span of the forward window (weeks)")
 ax.set_ylabel("Persistence beyond shuffled null (%)")
 ax.grid(axis="y", color=GRID, lw=0.8, zorder=0)
 top = ax.secondary_xaxis("top")
@@ -233,7 +233,7 @@ a11 = P["A11"]
 ci["b"] = (a11["b"] - 1.96 * a11["b_se"], a11["b"] + 1.96 * a11["b_se"])
 ci["R_next"] = (a11["R_next"] - 1.96 * a11["R_next_se"], a11["R_next"] + 1.96 * a11["R_next_se"])
 fig, axs = plt.subplots(1, 2, figsize=(7.0, 3.0), sharey=True)
-for ax, (k, title) in zip(axs, (("b", "A. Offseason carry-over slope"), ("R_next", "B. Step retention into next season"))):
+for ax, (k, title) in zip(axs, (("b", "A. Offseason slope, before the null"), ("R_next", "B. Step retention into next season"))):
     ax.axvspan(*ci[k], color=BAND, zorder=0, lw=0)
     ax.axvline(sig["real"][k], color=BLUE, lw=1.8, zorder=1)
     for i, (w, lab) in enumerate(W):

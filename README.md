@@ -15,17 +15,19 @@ python analysis2.py       statcast_hotstreak out_main      # park/week adjustmen
 python simulate.py sim_hot 1.0 && python hot_streak_study.py sim_hot out_sim_hot    # pipeline check: injected state
 python simulate.py sim_null 0  && python hot_streak_study.py sim_null out_sim_null  # pipeline check: no state
 
-# full-paper analyses (plans: PLAN_2026-09-30.md and addenda B to E, each written and hashed before the analyses ran)
+# full-paper analyses (plans: PLAN_2026-09-30.md and addenda B to E, each written and hashed before its analyses ran;
+# the plans are kept with the authors and their hashes are recorded in the result files)
 python fetch_public.py statcast_hotstreak data_public            # IL transactions, Marcel inputs, postseason (MLB Stats API)
 FG_BAT=path/to/fangraphs_position_player_lines.xlsx SHARED_STATCAST=path/to/full_width_statcast_by_season \
 python analysis3.py statcast_hotstreak data_public out3          # A1-A10 -> out3/a1.json ... a10.json
 python null_mc.py out3                                            # 20-shuffle null
-python make_paper_results.py statcast_hotstreak out3 out_main/results2.json out3/paper_results.json
 python export_frame.py out3 && python horizon_weeks.py out3
 FG_BAT=... python analysis4_reversion.py statcast_hotstreak data_public out3 real sims merge   # A11, offseason (exploratory)
+python make_paper_results.py statcast_hotstreak out3 out_main/results2.json out3/paper_results.json
 python b3_a7_pairs.py statcast_hotstreak data_public out3         # lineup decisions per pair (addendum D)
 python paper_counts.py statcast_hotstreak out3                    # descriptive counts for the paper
 python e_review.py statcast_hotstreak data_public out3            # checks added after review (addendum E, exploratory)
+python e_audit.py statcast_hotstreak data_public out3             # checks added after the accuracy audit (exploratory)
 cp out_main/results2.json out3/results_adjusted.json
 python make_paper_block.py out3 [companion_results.json]          # every number the paper prints -> paper_results.json['paper']
 python make_figures.py out3/paper_results.json figures
@@ -35,7 +37,10 @@ FG_BAT=... python verify_paper.py statcast_hotstreak out3/paper_results.json out
 
 `fetch_statcast.py` and `fetch_public.py` need network access to baseballsavant.mlb.com and statsapi.mlb.com; everything
 else runs offline. The FanGraphs season lines (projection baseline and survivorship weights) are not redistributed;
-download them from FanGraphs. `make_paper_block.py` stores the two companion-paper values it quotes, with their source
+download them from FanGraphs. The pitcher analysis (A5) reads release extension, release height and arm angle from a
+full-width Statcast extract by season (`SHARED_STATCAST`, files `statcast_YYYY.parquet`); `fetch_statcast.py` does not
+download arm angle. Savant revises its data, so a fresh download can differ slightly from the 2026-09-30 extract used
+here. `make_paper_block.py` stores the two companion-paper values it quotes, with their source
 key and file hash, so later runs do not need the companion file.
 
 ## What it does
@@ -88,7 +93,7 @@ Persistence is the actual slope minus the mean slope over 20 within-hitter-seaso
   feed; A8, `paper_results.json['abstract']['il_or']`). The window requirement drops points just before season-ending
   placements.
 * Bat tracking is missing for the first week of 2024. The 2026 season was pulled on 2026-09-30, after the regular season
-  ended and before Savant's off-season reprocessing.
+  ended, before any later corrections Savant may make to that season's data.
 * Persistence is attenuated by measurement noise, and 50-PA wOBA is very noisy, so the near-zero wOBA persistence does
   not show that hitters lack a results-level state. It shows that the swing measures a state better.
 * Most bat-speed persistence is within-season shifts of level, which can come from form, equipment, deliberate swing
@@ -96,7 +101,8 @@ Persistence is the actual slope minus the mean slope over 20 within-hitter-seaso
 * A hitter needs 50 more PA that season to be a data point. Three survivorship corrections leave the cold tail in place
   but none models benching during the forward window.
 * The forecast uses the opponents and parks actually faced in the forward window and full-season opponent quality, and
-  it leaves the recent 50 PA out of the hitter's history. The lineup run values are model-expected.
+  it leaves the recent 50 PA out of the hitter's history. The lineup run values are model-expected, and the inputs for
+  the hitter who sat come from his last decision point (sometimes in the previous season; `e_audit.py`).
 * The decile effects vary by season (2024's bottom decile is positive) and are smaller with 25-PA forward windows; only
   the top-bottom spread replicates every season.
 * Bat-speed persistence depends on the competitive-swing filter (13.3% without it); swing length, fast-swing rate and the
