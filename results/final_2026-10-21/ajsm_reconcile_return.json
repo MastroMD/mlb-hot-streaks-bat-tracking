@@ -1,0 +1,676 @@
+{
+ "note": "post hoc reconciliation, not prespecified; corrected IL file; every eligible control; common sample of stints with every variant",
+ "n_stints_any": 665,
+ "n_stints_common": 394,
+ "by_family_common": {
+  "other": 220,
+  "hand_wrist": 65,
+  "hamstring": 63,
+  "oblique": 46
+ },
+ "steps": {
+  "all": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": -0.13425341358267198,
+    "lo": -0.2780329101415773,
+    "hi": 0.009526082976233363,
+    "p": 0.06723394841678823,
+    "n": 394
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.28163772078178667,
+    "lo": -0.4239728066830003,
+    "hi": -0.13930263488057307,
+    "p": 0.0001052447725099311,
+    "n": 394
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": 0.0023823978396390034,
+    "lo": -0.1629322518116809,
+    "hi": 0.1676970474909589,
+    "p": 0.9774662561426379,
+    "n": 394
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": 0.0666496028233867,
+    "lo": -0.10920018658032127,
+    "hi": 0.24249939222709466,
+    "p": 0.4575697280060751,
+    "n": 394
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.05291793149019489,
+    "lo": -0.17499332662773004,
+    "hi": 0.06915746364734024,
+    "p": 0.395538472512996,
+    "n": 394
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.18351193897134022,
+    "lo": -0.30510223945636905,
+    "hi": -0.06192163848631138,
+    "p": 0.003095373666374623,
+    "n": 394
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.22347779115756033,
+    "lo": -0.33582249791281304,
+    "hi": -0.11113308440230761,
+    "p": 9.667456044749107e-05,
+    "n": 394
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.10765039561173409,
+    "lo": -0.28038949927371815,
+    "hi": 0.06508870805024997,
+    "p": 0.22191848957813864,
+    "n": 394
+   },
+   "1b companion design, 2024-2025 activations only": {
+    "mean": -0.3236642808333901,
+    "lo": -0.5019105316742829,
+    "hi": -0.1454180299924973,
+    "p": 0.00037233372813605457,
+    "n": 238
+   },
+   "control change under the companion design": {
+    "mean": 0.14738430719911466,
+    "lo": 0.12681969990668887,
+    "hi": 0.16794891449154045,
+    "p": 8.053852056323638e-45,
+    "n": 394
+   }
+  },
+  "oblique": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": 0.20561573021371066,
+    "lo": -0.18061324005925533,
+    "hi": 0.5918447004866767,
+    "p": 0.29675334270142373,
+    "n": 46
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.022257126852637824,
+    "lo": -0.40893161669283207,
+    "hi": 0.36441736298755645,
+    "p": 0.9101762326677015,
+    "n": 46
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": 0.25609802719213004,
+    "lo": -0.22940526151662605,
+    "hi": 0.7416013159008861,
+    "p": 0.30120115507752654,
+    "n": 46
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": 0.16774861549840273,
+    "lo": -0.3161092328162407,
+    "hi": 0.6516064638130462,
+    "p": 0.4968213211323538,
+    "n": 46
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.24963342879627864,
+    "lo": -0.5456408874653232,
+    "hi": 0.046374029872765954,
+    "p": 0.09834997844480453,
+    "n": 46
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.3876653759333954,
+    "lo": -0.6819029651719198,
+    "hi": -0.09342778669487095,
+    "p": 0.009814379603354937,
+    "n": 46
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.4142672942314738,
+    "lo": -0.707173246161659,
+    "hi": -0.12136134230128859,
+    "p": 0.0055705044698142235,
+    "n": 46
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.01843567979958088,
+    "lo": -0.51560756872407,
+    "hi": 0.4787362091249082,
+    "p": 0.9420626599844192,
+    "n": 46
+   },
+   "1b companion design, 2024-2025 activations only": {
+    "mean": 0.12145912081315134,
+    "lo": -0.39492712195991464,
+    "hi": 0.6378453635862174,
+    "p": 0.6447965982054443,
+    "n": 30
+   },
+   "control change under the companion design": {
+    "mean": 0.22787285706634847,
+    "lo": 0.1614232001635146,
+    "hi": 0.2943225139691823,
+    "p": 1.802124268637313e-11,
+    "n": 46
+   }
+  },
+  "hand_wrist": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": -0.6346134288269839,
+    "lo": -1.0039504223475029,
+    "hi": -0.26527643530646505,
+    "p": 0.0007579559149270087,
+    "n": 65
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.7064230923413723,
+    "lo": -1.0780850995795408,
+    "hi": -0.33476108510320385,
+    "p": 0.00019505947100013508,
+    "n": 65
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": -0.5773602872159667,
+    "lo": -0.9789391275624597,
+    "hi": -0.17578144686947356,
+    "p": 0.004834022885906996,
+    "n": 65
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": -0.4688147992957763,
+    "lo": -0.8872324075110213,
+    "hi": -0.05039719108053131,
+    "p": 0.028089368237558233,
+    "n": 65
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.3458518571013144,
+    "lo": -0.63610065984893,
+    "hi": -0.05560305435369872,
+    "p": 0.019520712975612906,
+    "n": 65
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.4455955439736553,
+    "lo": -0.7339612513089925,
+    "hi": -0.15722983663831813,
+    "p": 0.002456704713456774,
+    "n": 65
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.5070827295377328,
+    "lo": -0.7797646506285667,
+    "hi": -0.23440080844689892,
+    "p": 0.0002676272154731085,
+    "n": 65
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.6083388352667328,
+    "lo": -1.0278277487583702,
+    "hi": -0.18884992177509552,
+    "p": 0.004478635297871873,
+    "n": 65
+   },
+   "1b companion design, 2024-2025 activations only": {
+    "mean": -0.9381929086575217,
+    "lo": -1.3983665580797169,
+    "hi": -0.4780192592353264,
+    "p": 6.443922526142343e-05,
+    "n": 38
+   },
+   "control change under the companion design": {
+    "mean": 0.07180966351438826,
+    "lo": 0.024494012502033737,
+    "hi": 0.1191253145267428,
+    "p": 0.002933866071334848,
+    "n": 65
+   }
+  },
+  "hamstring": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": 0.13516078875716717,
+    "lo": -0.1723128624325506,
+    "hi": 0.4426344399468849,
+    "p": 0.3889238195527768,
+    "n": 63
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.04013578759030266,
+    "lo": -0.34437549367352904,
+    "hi": 0.2641039184929237,
+    "p": 0.7959735324358533,
+    "n": 63
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": 0.42355208450629195,
+    "lo": 0.0925874888949218,
+    "hi": 0.7545166801176622,
+    "p": 0.012132572307931511,
+    "n": 63
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": 0.48886894754510773,
+    "lo": 0.10000426522346628,
+    "hi": 0.8777336298667492,
+    "p": 0.013739320037248112,
+    "n": 63
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": 0.25108678515579075,
+    "lo": -0.0609021788457802,
+    "hi": 0.5630757491573617,
+    "p": 0.11471113373186444,
+    "n": 63
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": 0.12313790999079006,
+    "lo": -0.18923958498325183,
+    "hi": 0.43551540496483193,
+    "p": 0.43975342857602695,
+    "n": 63
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": 0.021418418710637432,
+    "lo": -0.25451458837239715,
+    "hi": 0.297351425793672,
+    "p": 0.8790797127616836,
+    "n": 63
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": 0.2737514608399667,
+    "lo": -0.10028809948270756,
+    "hi": 0.647791021162641,
+    "p": 0.15144239602035278,
+    "n": 63
+   },
+   "1b companion design, 2024-2025 activations only": {
+    "mean": 0.10687059994865282,
+    "lo": -0.22796402807670613,
+    "hi": 0.4417052279740118,
+    "p": 0.531596965101474,
+    "n": 36
+   },
+   "control change under the companion design": {
+    "mean": 0.17529657634746976,
+    "lo": 0.1274616509837281,
+    "hi": 0.2231315017112114,
+    "p": 6.844152002030026e-13,
+    "n": 63
+   }
+  },
+  "other": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": -0.1346337516334138,
+    "lo": -0.32779279617218005,
+    "hi": 0.05852529290535244,
+    "p": 0.1719031370855416,
+    "n": 220
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.2795244478746563,
+    "lo": -0.47101657486342297,
+    "hi": -0.08803232088588964,
+    "p": 0.004223148755509806,
+    "n": 220
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": 1.269474146009954e-05,
+    "lo": -0.22393916575345357,
+    "hi": 0.22396455523637376,
+    "p": 0.9999113543686704,
+    "n": 220
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": 0.0828078429925978,
+    "lo": -0.15430360547553962,
+    "hi": 0.3199192914607352,
+    "p": 0.49366586962140124,
+    "n": 220
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.01229374561698798,
+    "lo": -0.15810913209705427,
+    "hi": 0.1335216408630783,
+    "p": 0.8687509577154466,
+    "n": 220
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.15120488469501836,
+    "lo": -0.2981961456865318,
+    "hi": -0.004213623703504921,
+    "p": 0.043784508159925364,
+    "n": 220
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.16992244154658434,
+    "lo": -0.30210107409805964,
+    "hi": -0.03774380899510904,
+    "p": 0.011747669117133633,
+    "n": 220
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.08759332882192193,
+    "lo": -0.3228533906881769,
+    "hi": 0.1476667330443331,
+    "p": 0.46554628755892746,
+    "n": 220
+   },
+   "1b companion design, 2024-2025 activations only": {
+    "mean": -0.364715548745575,
+    "lo": -0.6021267672163277,
+    "hi": -0.12730433027482224,
+    "p": 0.0026044606867820417,
+    "n": 134
+   },
+   "control change under the companion design": {
+    "mean": 0.1448906962412425,
+    "lo": 0.11663738018309457,
+    "hi": 0.17314401229939044,
+    "p": 9.072886020835418e-24,
+    "n": 220
+   }
+  }
+ },
+ "steps_max_sample": {
+  "all": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": -0.12239583490692535,
+    "lo": -0.2632201753663373,
+    "hi": 0.018428505552486596,
+    "p": 0.0884783032014157,
+    "n": 443
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.2755745826645369,
+    "lo": -0.4150963006502786,
+    "hi": -0.13605286467879518,
+    "p": 0.00010830157956131899,
+    "n": 443
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": -0.02480679928099515,
+    "lo": -0.17394374217922648,
+    "hi": 0.12433014361723617,
+    "p": 0.744415275344869,
+    "n": 488
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": -0.0012180977504976653,
+    "lo": -0.15964740040421482,
+    "hi": 0.1572112049032195,
+    "p": 0.9879768477591306,
+    "n": 514
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.021894247886772265,
+    "lo": -0.13689819909400877,
+    "hi": 0.09310970332046423,
+    "p": 0.7090483717551472,
+    "n": 512
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.17076571813418423,
+    "lo": -0.2875214922909657,
+    "hi": -0.0540099439774028,
+    "p": 0.004148783683087939,
+    "n": 473
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.20902153268208234,
+    "lo": -0.3170902557489459,
+    "hi": -0.10095280961521881,
+    "p": 0.00015011942208593106,
+    "n": 471
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.1401991588505457,
+    "lo": -0.3019402085523251,
+    "hi": 0.021541890851233703,
+    "p": 0.08933402757243832,
+    "n": 475
+   }
+  },
+  "oblique": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": 0.15096937283238807,
+    "lo": -0.18197313332577372,
+    "hi": 0.4839118789905499,
+    "p": 0.3741505612835696,
+    "n": 56
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.0815580590925822,
+    "lo": -0.413899313942418,
+    "hi": 0.25078319575725366,
+    "p": 0.63052780116418,
+    "n": 56
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": 0.15342963821528305,
+    "lo": -0.2322202553558823,
+    "hi": 0.5390795317864484,
+    "p": 0.4355287901832663,
+    "n": 61
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": 0.03391030057552487,
+    "lo": -0.3687684155562275,
+    "hi": 0.43658901670727723,
+    "p": 0.8689029742662517,
+    "n": 66
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.16143330107439147,
+    "lo": -0.4108758178243099,
+    "hi": 0.08800921567552694,
+    "p": 0.20464002043565876,
+    "n": 65
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.3543372771802791,
+    "lo": -0.6108531656272933,
+    "hi": -0.09782138873326485,
+    "p": 0.006781473872505394,
+    "n": 60
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.36888888629664934,
+    "lo": -0.6224206968594979,
+    "hi": -0.11535707573380077,
+    "p": 0.0043479502075539555,
+    "n": 60
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.1299045898378546,
+    "lo": -0.5655381713862242,
+    "hi": 0.30572899171051504,
+    "p": 0.5589140894654058,
+    "n": 61
+   }
+  },
+  "hand_wrist": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": -0.6061952192014356,
+    "lo": -0.9717320852607678,
+    "hi": -0.24065835314210332,
+    "p": 0.0011526522420989636,
+    "n": 69
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.6841631902689077,
+    "lo": -1.0528707127117263,
+    "hi": -0.3154556678260891,
+    "p": 0.00027598888391450297,
+    "n": 69
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": -0.39417937486744137,
+    "lo": -0.7742217300757237,
+    "hi": -0.014137019659159034,
+    "p": 0.04206547902666873,
+    "n": 80
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": -0.3281686280213392,
+    "lo": -0.6845356867917038,
+    "hi": 0.02819843074902534,
+    "p": 0.07109393875189297,
+    "n": 89
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": -0.30585281727757513,
+    "lo": -0.571684079829069,
+    "hi": -0.04002155472608121,
+    "p": 0.02413072935620181,
+    "n": 89
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.5035900663121237,
+    "lo": -0.7712635114532013,
+    "hi": -0.23591662117104606,
+    "p": 0.00022655930403716113,
+    "n": 78
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.5355781394419432,
+    "lo": -0.7819870842472647,
+    "hi": -0.2891691946366218,
+    "p": 2.0438326001429383e-05,
+    "n": 78
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.5786055731675526,
+    "lo": -0.9477356064005718,
+    "hi": -0.20947553993453344,
+    "p": 0.0021247805249410287,
+    "n": 78
+   }
+  },
+  "hamstring": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": 0.16275691328856978,
+    "lo": -0.11807954279746685,
+    "hi": 0.4435933693746064,
+    "p": 0.256005039092321,
+    "n": 73
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.01766855068570551,
+    "lo": -0.2960405171652677,
+    "hi": 0.2607034157938567,
+    "p": 0.9009978612478925,
+    "n": 73
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": 0.39991753023594356,
+    "lo": 0.11099348270637333,
+    "hi": 0.6888415777655138,
+    "p": 0.006669590183345476,
+    "n": 79
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": 0.4034627503065926,
+    "lo": 0.04916682404133155,
+    "hi": 0.7577586765718537,
+    "p": 0.025617956712721116,
+    "n": 75
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": 0.22786461251136697,
+    "lo": -0.0738312211032836,
+    "hi": 0.5295604461260175,
+    "p": 0.1387878174922006,
+    "n": 75
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": 0.07910790215769072,
+    "lo": -0.21936940912040848,
+    "hi": 0.3775852134357899,
+    "p": 0.6034362275277154,
+    "n": 71
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.05025291875296151,
+    "lo": -0.31225811458934644,
+    "hi": 0.21175227708342342,
+    "p": 0.7069737674995773,
+    "n": 70
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": 0.1830357224732739,
+    "lo": -0.16805930007254768,
+    "hi": 0.5341307450190955,
+    "p": 0.3068829449580591,
+    "n": 71
+   }
+  },
+  "other": {
+   "1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls": {
+    "mean": -0.13358948688795186,
+    "lo": -0.3304281059037196,
+    "hi": 0.06324913212781594,
+    "p": 0.18345932558391176,
+    "n": 245
+   },
+   "2 step 1 with matched controls": {
+    "mean": -0.28169479380650686,
+    "lo": -0.47485725574639415,
+    "hi": -0.08853233186661957,
+    "p": 0.004259495758786945,
+    "n": 245
+   },
+   "3 step 1 with games 1-10 in place of 30 days": {
+    "mean": -0.08031365999814223,
+    "lo": -0.28530817278568354,
+    "hi": 0.12468085278939907,
+    "p": 0.4425564673012782,
+    "n": 268
+   },
+   "4 step 3 with this study's baseline": {
+    "mean": -0.013791832608576436,
+    "lo": -0.2340366242785159,
+    "hi": 0.20645295906136302,
+    "p": 0.9023178438037933,
+    "n": 284
+   },
+   "5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)": {
+    "mean": 0.03326630548112972,
+    "lo": -0.10310288436773407,
+    "hi": 0.1696354953299935,
+    "p": 0.6325651966731449,
+    "n": 283
+   },
+   "6 this study's design: step 5 with matched controls": {
+    "mean": -0.09791130275569235,
+    "lo": -0.23634656609005908,
+    "hi": 0.040523960578674384,
+    "p": 0.16567775975925936,
+    "n": 264
+   },
+   "7 this study's design over the first 30 days": {
+    "mean": -0.1179582111265511,
+    "lo": -0.24688993184144115,
+    "hi": 0.010973509588338967,
+    "p": 0.07294902870115956,
+    "n": 263
+   },
+   "8 companion metric (unadjusted, every tracked swing) in this study's design": {
+    "mean": -0.10013102665069208,
+    "lo": -0.32715884236467563,
+    "hi": 0.1268967890632915,
+    "p": 0.38734312895424594,
+    "n": 265
+   }
+  }
+ },
+ "missing_by_variant": {
+  "inj|raw_all|b150|p30": 222,
+  "inj|raw_all|b150|g10": 177,
+  "inj|raw_all|bours|g10": 151,
+  "inj|adj_comp|bours|g10": 153,
+  "inj|adj_comp|bours|p30": 194,
+  "ctl|raw_all|b150|p30": 171,
+  "ctl|adj_comp|bours|g10": 157,
+  "ctl|adj_comp|bours|p30": 157,
+  "ctl|raw_all|bours|g10": 157
+ }
+}

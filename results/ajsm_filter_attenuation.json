@@ -1,0 +1,22 @@
+{
+ "analytic_normal_small_shift_retention": 0.7120755427829933,
+ "monte_carlo_retention": {
+  "normal_sd3_decline_0.5mph": 0.6516766965614507,
+  "normal_sd3_decline_1.0mph": 0.7017944234075982,
+  "normal_sd3_decline_2.0mph": 0.6436756659724139,
+  "left_skewed_mixture_decline_0.5mph": 0.8242473701703523,
+  "left_skewed_mixture_decline_1.0mph": 0.8022415274154241,
+  "left_skewed_mixture_decline_2.0mph": 0.7955010588451396
+ },
+ "pipeline_simulation_check": {
+  "injected_prodrome_mph": -0.6,
+  "measured_competitive_swings": -0.4326208262541474,
+  "measured_all_swings": -0.5722387888731494,
+  "retention_competitive": 0.721034710423579,
+  "retention_all_swings": 0.9537313147885823,
+  "injected_post_return_hand_wrist_mph": -1.0,
+  "measured_post_return_competitive": -0.836023296801651,
+  "measured_post_return_all_swings": -1.2311173079702726,
+  "note": "simulate.py seasons (160 hitters x 3 seasons) with injected IL stints: oblique -0.6 mph in the 14 days before placement, hand/wrist -1.0 mph in the first 10 games after return; scripts as delivered"
+ }
+}

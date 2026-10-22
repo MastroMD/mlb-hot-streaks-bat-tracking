@@ -1,0 +1,55 @@
+{
+ "note": "python3 ojsm_season_cohort_changes.py IL_STINTS FG_BATTRACK_CSV FG_POSITION_XLSX FG_2026_CSV PUBLISHED_SEASON_JSON COMPARE_JSON OUT_JSON",
+ "il_sha16": "f5910d8a5e2b3ef3",
+ "rerun_equals_published": true,
+ "hitter_seasons": [
+  {
+   "batter": 645277,
+   "season": 2025,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "W"
+   ],
+   "in_F1_primary": true,
+   "in_F1_sensitivity_add_2024": true,
+   "in_F2": true,
+   "F2_first_family": "hand_wrist",
+   "F2_any_hand_wrist": 1
+  },
+  {
+   "batter": 669242,
+   "season": 2024,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "W"
+   ],
+   "in_F1_primary": false,
+   "in_F1_sensitivity_add_2024": true,
+   "in_F2": true,
+   "F2_first_family": "hand_wrist",
+   "F2_any_hand_wrist": 1
+  },
+  {
+   "batter": 682657,
+   "season": 2024,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "X"
+   ],
+   "in_F1_primary": false,
+   "in_F1_sensitivity_add_2024": false,
+   "in_F2": false,
+   "F2_first_family": null,
+   "F2_any_hand_wrist": null
+  }
+ ]
+}

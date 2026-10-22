@@ -1,0 +1,11 @@
+[     4s] pitches 2141219
+[    11s] batter-games 147109 placements 712 label end 2026-09-27 covered hitters 420
+[    23s] F4a done {"diff_all_swings": -0.06431599708054075, "se_all_swings": 0.0688665641694622, "diff": -0.012418551876972479, "se": 0.04807844625398036, "p": 0.7961771645616709, "lo": -0.10665057496741867, "hi": 0.08181347121347371, "ci90": [-0.0915005585760235, 0.06666345482207854], "n_inj": 543, "equivalent_0p5": true, "inj_raw_mean": 0.06431581890698355}
+[   244s] A8 at-risk done {"complete_forward_300pa_replication": {"OR_per_minus1SD": 0.9559258397024359, "lo": 0.8635663846877156, "hi": 1.0581632486091446, "p": 0.38458784863684736, "events": 6001, "F4e": {"OR_per_plus1SD_faster": 1.0282724207246392, "faster_ci": [0.8737780832206635, 1.210083191061097], "faster_p": 0.737147680762116, "OR_per_1SD_slower": 0.9341272665704926, "slower_ci": [0.7634877656553517, 1.1429046926527442], "slower_p": 0.5079035397634365}}, "at_risk_300pa": {"OR_per_minus1SD": 0.942166433112516, "lo": 0.8571997985310054, "hi": 1.0355550586983175, "p": 0.21666212834871312, "events": 6890, "F4e": {"
+[   245s] stints with post-return games 466
+[   269s] F4b done {"mean": -0.5809558270704563, "se": 0.155301284718505, "lo": -0.8853407518715268, "hi": -0.2765709022693859, "p": 0.00018341297882739914, "n": 76, "hitters": 65, "injured_raw": -0.46957595427407073, "control_raw": 0.11137987279638589}
+[   272s] F4c 25 {"bat_speed": 0.543, "swing_len": 0.448, "fast_swing": 0.476, "bat_speed_count_adjusted": 0.552, "ev": 0.039, "hard_hit": 0.022, "xwoba": 0.092, "woba": 0.064}
+[   274s] F4c 50 {"bat_speed": 0.636, "swing_len": 0.552, "fast_swing": 0.573, "bat_speed_count_adjusted": 0.648, "ev": 0.066, "hard_hit": 0.031, "xwoba": 0.071, "woba": 0.062}
+[   277s] F4c 100 {"bat_speed": 0.719, "swing_len": 0.679, "fast_swing": 0.669, "bat_speed_count_adjusted": 0.733, "ev": 0.144, "hard_hit": 0.094, "xwoba": 0.095, "woba": 0.07}
+[   285s] F4d {"raw": 0.2520870460626517, "adj": 0.2670848518541496}
+[   285s] wrote repo/results/stints_2026-10-20/ajsm_game_ojsm.json

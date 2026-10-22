@@ -1,0 +1,98 @@
+{
+ "note": "The IL rows of Supplemental Table S5 come from the original injury analysis (analysis3.py A8, on ORIGINAL_IL_FILE, repo/data_public/il_transactions_hitters_2024_2026.txt), which drops from its first row every game within 45 days after an activation. It was not rerun with the activations added in the final run (MISSING_ACTIVATIONS_JSON, ojsm_missing_activations.py). This counts the regular-season games of each such hitter from the added activation through 45 days later that are not already within 45 days after an activation of ORIGINAL_IL_FILE: an upper bound on the observations of that analysis (one per game with a complete window, PAPER_RESULTS_JSON['A8']['n_points']) that adding the activations could move out of its first row.",
+ "games_bound": 322,
+ "a8_n_points": 81376,
+ "share": 0.0039569406213134095,
+ "by_placement": [
+  {
+   "batter": 605141,
+   "placement": "240617PW10",
+   "games_within_45_days": 41,
+   "not_already_after_an_activation": 41
+  },
+  {
+   "batter": 643217,
+   "placement": "250407PX10",
+   "games_within_45_days": 24,
+   "not_already_after_an_activation": 15
+  },
+  {
+   "batter": 664040,
+   "placement": "250708PO10",
+   "games_within_45_days": 30,
+   "not_already_after_an_activation": 2
+  },
+  {
+   "batter": 665052,
+   "placement": "250420PX60",
+   "games_within_45_days": 4,
+   "not_already_after_an_activation": 4
+  },
+  {
+   "batter": 665161,
+   "placement": "250628PX10",
+   "games_within_45_days": 39,
+   "not_already_after_an_activation": 16
+  },
+  {
+   "batter": 666018,
+   "placement": "240327PW10",
+   "games_within_45_days": 18,
+   "not_already_after_an_activation": 18
+  },
+  {
+   "batter": 667472,
+   "placement": "240715PX10",
+   "games_within_45_days": 4,
+   "not_already_after_an_activation": 4
+  },
+  {
+   "batter": 669357,
+   "placement": "250713PX10",
+   "games_within_45_days": 39,
+   "not_already_after_an_activation": 39
+  },
+  {
+   "batter": 673490,
+   "placement": "250820PX10",
+   "games_within_45_days": 24,
+   "not_already_after_an_activation": 12
+  },
+  {
+   "batter": 680869,
+   "placement": "240424PO10",
+   "games_within_45_days": 38,
+   "not_already_after_an_activation": 38
+  },
+  {
+   "batter": 682626,
+   "placement": "260513PX10",
+   "games_within_45_days": 32,
+   "not_already_after_an_activation": 32
+  },
+  {
+   "batter": 683011,
+   "placement": "260322PX10",
+   "games_within_45_days": 33,
+   "not_already_after_an_activation": 33
+  },
+  {
+   "batter": 687597,
+   "placement": "240526PW10",
+   "games_within_45_days": 30,
+   "not_already_after_an_activation": 30
+  },
+  {
+   "batter": 691016,
+   "placement": "240710PW10",
+   "games_within_45_days": 12,
+   "not_already_after_an_activation": 12
+  },
+  {
+   "batter": 805779,
+   "placement": "240720PH10",
+   "games_within_45_days": 26,
+   "not_already_after_an_activation": 26
+  }
+ ]
+}

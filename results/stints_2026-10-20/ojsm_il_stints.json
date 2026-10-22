@@ -1,0 +1,712 @@
+{
+ "note": "Author decision of 2026-10-20 (PLAN_ADDENDUM_2026-10-17h.md, item 12): count IL stints, not IL placement records.",
+ "original": {
+  "input": "repo/data_public/il_transactions_hitters_2024_2026.txt",
+  "output": "repo/data_public/il_transactions_hitters_2024_2026_stints.txt",
+  "placement_records": 740,
+  "stints": 716,
+  "merged": 24,
+  "merged_by_reason": {
+   "60-day placement": 20,
+   "same injury as the first record of the stint": 2,
+   "within 2 days of the previous placement record": 2
+  },
+  "merged_naming_a_different_family": 2,
+  "kept_without_activation_same_season": 10,
+  "merged_records": [
+   {
+    "batter": 467793,
+    "stint_start": "2026-04-06",
+    "stint_code": "260406PX10",
+    "stint_text": "strained right adductor",
+    "merged_date": "2026-06-01",
+    "merged_code": "260601PX60",
+    "merged_text": "strained right adductor",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 545361,
+    "stint_start": "2024-04-30",
+    "stint_code": "240430PX10",
+    "stint_text": "left knee meniscus tear",
+    "merged_date": "2024-08-27",
+    "merged_code": "240827PX60",
+    "merged_text": "left knee meniscus tear",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 593871,
+    "stint_start": "2026-04-15",
+    "stint_code": "260415PW10",
+    "stint_text": "right wrist contusion",
+    "merged_date": "2026-06-15",
+    "merged_code": "260615PW60",
+    "merged_text": "right wrist contusion",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 608369,
+    "stint_start": "2024-09-04",
+    "stint_code": "240904PX10",
+    "stint_text": "right hip discomfort",
+    "merged_date": "2024-09-13",
+    "merged_code": "240913PX10",
+    "merged_text": "right hip discomfort",
+    "reason": "same injury as the first record of the stint",
+    "family_differs": false
+   },
+   {
+    "batter": 641584,
+    "stint_start": "2026-05-16",
+    "stint_code": "260516PX10",
+    "stint_text": "hernia",
+    "merged_date": "2026-08-02",
+    "merged_code": "260802PX60",
+    "merged_text": "hernia",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 645277,
+    "stint_start": "2025-09-23",
+    "stint_code": "250923PW10",
+    "stint_text": "fractured left hammate",
+    "merged_date": "2025-09-23",
+    "merged_code": "250923PX10",
+    "merged_text": "fractured left hammate",
+    "reason": "within 2 days of the previous placement record",
+    "family_differs": true
+   },
+   {
+    "batter": 663656,
+    "stint_start": "2024-06-04",
+    "stint_code": "240604PX10",
+    "stint_text": "right shin contusion",
+    "merged_date": "2024-07-30",
+    "merged_code": "240730PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 663898,
+    "stint_start": "2025-06-15",
+    "stint_code": "250615PO10",
+    "stint_text": "left oblique strain",
+    "merged_date": "2025-07-20",
+    "merged_code": "250720PO60",
+    "merged_text": "left oblique strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 665487,
+    "stint_start": "2024-06-22",
+    "stint_code": "240622PX10",
+    "stint_text": "right femoral stress reaction",
+    "merged_date": "2024-08-21",
+    "merged_code": "240821PX60",
+    "merged_text": "right femoral stress reaction",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 665804,
+    "stint_start": "2025-04-16",
+    "stint_code": "250416PO7",
+    "stint_text": "",
+    "merged_date": "2025-07-31",
+    "merged_code": "250731PO60",
+    "merged_text": "left oblique strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 666158,
+    "stint_start": "2026-03-23",
+    "stint_code": "260323PX10",
+    "stint_text": "right shoulder impingement",
+    "merged_date": "2026-05-27",
+    "merged_code": "260527PX60",
+    "merged_text": "right shoulder impingement",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 668939,
+    "stint_start": "2026-07-19",
+    "stint_code": "260719PW10",
+    "stint_text": "left wrist inflammation",
+    "merged_date": "2026-08-03",
+    "merged_code": "260803PW10",
+    "merged_text": "left wrist inflammation",
+    "reason": "same injury as the first record of the stint",
+    "family_differs": false
+   },
+   {
+    "batter": 669003,
+    "stint_start": "2025-04-26",
+    "stint_code": "250426PO10",
+    "stint_text": "left oblique strain",
+    "merged_date": "2025-07-06",
+    "merged_code": "250706PO60",
+    "merged_text": "left oblique strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 669242,
+    "stint_start": "2024-03-25",
+    "stint_code": "240325PW10",
+    "stint_text": "right wrist sprain",
+    "merged_date": "2024-07-28",
+    "merged_code": "240728PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 669242,
+    "stint_start": "2024-03-25",
+    "stint_code": "240325PW10",
+    "stint_text": "right wrist sprain",
+    "merged_date": "2024-07-29",
+    "merged_code": "240729PW60",
+    "merged_text": "right wrist sprain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 669720,
+    "stint_start": "2026-05-02",
+    "stint_code": "260502PX10",
+    "stint_text": "left calf strain",
+    "merged_date": "2026-06-09",
+    "merged_code": "260609PX60",
+    "merged_text": "left calf strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 672820,
+    "stint_start": "2026-05-27",
+    "stint_code": "260527PW10",
+    "stint_text": "right wrist contusion",
+    "merged_date": "2026-08-02",
+    "merged_code": "260802PW60",
+    "merged_text": "right wrist contusion",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 676356,
+    "stint_start": "2025-04-07",
+    "stint_code": "250407PX10",
+    "stint_text": "right shoulder strain",
+    "merged_date": "2025-05-27",
+    "merged_code": "250527PX60",
+    "merged_text": "right shoulder strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 676356,
+    "stint_start": "2025-08-07",
+    "stint_code": "250807PH10",
+    "stint_text": "left hamstring strain",
+    "merged_date": "2025-09-13",
+    "merged_code": "250913PH60",
+    "merged_text": "left hamstring strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 680700,
+    "stint_start": "2025-04-18",
+    "stint_code": "250418PX10",
+    "stint_text": "right knee sprain",
+    "merged_date": "2025-04-18",
+    "merged_code": "250418PX60",
+    "merged_text": "right knee sprain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 680869,
+    "stint_start": "2025-03-26",
+    "stint_code": "250326PW10",
+    "stint_text": "right wrist surgery",
+    "merged_date": "2025-05-23",
+    "merged_code": "250523PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 682657,
+    "stint_start": "2024-03-25",
+    "stint_code": "240325PX10",
+    "stint_text": "right foot contusion",
+    "merged_date": "2024-04-17",
+    "merged_code": "240417PW60",
+    "merged_text": "left hamate fracture",
+    "reason": "60-day placement",
+    "family_differs": true
+   },
+   {
+    "batter": 686823,
+    "stint_start": "2025-05-20",
+    "stint_code": "250520PX10",
+    "stint_text": "left forearm inflammation",
+    "merged_date": "2025-05-22",
+    "merged_code": "250522PX10",
+    "merged_text": "left forearm inflammation",
+    "reason": "within 2 days of the previous placement record",
+    "family_differs": false
+   },
+   {
+    "batter": 693304,
+    "stint_start": "2025-03-28",
+    "stint_code": "250328PX10",
+    "stint_text": "non-displaced left ankle fracture",
+    "merged_date": "2025-05-20",
+    "merged_code": "250520PX60",
+    "merged_text": "non-displaced left ankle fracture",
+    "reason": "60-day placement",
+    "family_differs": false
+   }
+  ],
+  "kept_records": [
+   {
+    "batter": 571771,
+    "previous_stint_start": "2025-04-16",
+    "previous_text": "",
+    "kept_date": "2025-07-06",
+    "kept_code": "250706PX10",
+    "kept_text": "left elbow inflammation"
+   },
+   {
+    "batter": 592626,
+    "previous_stint_start": "2025-04-16",
+    "previous_text": "",
+    "kept_date": "2025-05-25",
+    "kept_code": "250525PW10",
+    "kept_text": "right hand fracture"
+   },
+   {
+    "batter": 641584,
+    "previous_stint_start": "2024-07-10",
+    "previous_text": "",
+    "kept_date": "2024-08-21",
+    "kept_code": "240821PX10",
+    "kept_text": "right knee sprain"
+   },
+   {
+    "batter": 643217,
+    "previous_stint_start": "2025-04-07",
+    "previous_text": "left adductor strain",
+    "kept_date": "2025-05-05",
+    "kept_code": "250505PX10",
+    "kept_text": "left calf strain"
+   },
+   {
+    "batter": 663837,
+    "previous_stint_start": "2025-06-28",
+    "previous_text": "",
+    "kept_date": "2025-08-10",
+    "kept_code": "250810PO10",
+    "kept_text": "left olique strain"
+   },
+   {
+    "batter": 664040,
+    "previous_stint_start": "2025-07-08",
+    "previous_text": "left oblique tightness",
+    "kept_date": "2025-07-20",
+    "kept_code": "250720PX10",
+    "kept_text": "left ankle/foot tendinitis"
+   },
+   {
+    "batter": 665833,
+    "previous_stint_start": "2026-06-08",
+    "previous_text": "left hand fourth and fifth metacarpal non-displaced fractures",
+    "kept_date": "2026-07-18",
+    "kept_code": "260718PW10",
+    "kept_text": ""
+   },
+   {
+    "batter": 668904,
+    "previous_stint_start": "2025-03-24",
+    "previous_text": "left hamstring strain",
+    "kept_date": "2025-04-10",
+    "kept_code": "250410PX10",
+    "kept_text": "left knee sprain"
+   },
+   {
+    "batter": 669720,
+    "previous_stint_start": "2025-05-09",
+    "previous_text": "",
+    "kept_date": "2025-05-29",
+    "kept_code": "250529PX10",
+    "kept_text": "left foot contusion"
+   },
+   {
+    "batter": 681460,
+    "previous_stint_start": "2025-07-01",
+    "previous_text": "",
+    "kept_date": "2025-07-08",
+    "kept_code": "250708PX10",
+    "kept_text": "lower back strain"
+   }
+  ]
+ },
+ "corrected": {
+  "input": "repo/data_public/il_transactions_hitters_2024_2026_corrected.txt",
+  "output": "repo/data_public/il_transactions_hitters_2024_2026_corrected_stints.txt",
+  "placement_records": 739,
+  "stints": 712,
+  "merged": 27,
+  "merged_by_reason": {
+   "60-day placement": 21,
+   "within 2 days of the previous placement record": 4,
+   "same injury as the first record of the stint": 2
+  },
+  "merged_naming_a_different_family": 1,
+  "kept_without_activation_same_season": 4,
+  "merged_records": [
+   {
+    "batter": 467793,
+    "stint_start": "2026-04-06",
+    "stint_code": "260406PX10",
+    "stint_text": "strained right adductor",
+    "merged_date": "2026-06-01",
+    "merged_code": "260601PX60",
+    "merged_text": "strained right adductor",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 545361,
+    "stint_start": "2024-04-30",
+    "stint_code": "240430PX10",
+    "stint_text": "left knee meniscus tear",
+    "merged_date": "2024-08-27",
+    "merged_code": "240827PX60",
+    "merged_text": "left knee meniscus tear",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 571771,
+    "stint_start": "2025-07-06",
+    "stint_code": "250706PX10",
+    "stint_text": "left elbow inflammation",
+    "merged_date": "2025-07-07",
+    "merged_code": "250707PX10",
+    "merged_text": "left elbow inflammation",
+    "reason": "within 2 days of the previous placement record",
+    "family_differs": false
+   },
+   {
+    "batter": 592450,
+    "stint_start": "2026-06-02",
+    "stint_code": "260602PX10",
+    "stint_text": "right rib stress fracture",
+    "merged_date": "2026-07-18",
+    "merged_code": "260718PX60",
+    "merged_text": "right rib stress fracture",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 593871,
+    "stint_start": "2026-04-15",
+    "stint_code": "260415PW10",
+    "stint_text": "right wrist contusion",
+    "merged_date": "2026-06-15",
+    "merged_code": "260615PW60",
+    "merged_text": "right wrist contusion",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 608369,
+    "stint_start": "2024-09-04",
+    "stint_code": "240904PX10",
+    "stint_text": "right hip discomfort",
+    "merged_date": "2024-09-13",
+    "merged_code": "240913PX10",
+    "merged_text": "right hip discomfort",
+    "reason": "same injury as the first record of the stint",
+    "family_differs": false
+   },
+   {
+    "batter": 641584,
+    "stint_start": "2026-05-16",
+    "stint_code": "260516PX10",
+    "stint_text": "hernia",
+    "merged_date": "2026-08-02",
+    "merged_code": "260802PX60",
+    "merged_text": "hernia",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 663656,
+    "stint_start": "2024-06-04",
+    "stint_code": "240604PX10",
+    "stint_text": "right shin contusion",
+    "merged_date": "2024-07-30",
+    "merged_code": "240730PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 663898,
+    "stint_start": "2025-06-15",
+    "stint_code": "250615PO10",
+    "stint_text": "left oblique strain",
+    "merged_date": "2025-07-20",
+    "merged_code": "250720PO60",
+    "merged_text": "left oblique strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 665487,
+    "stint_start": "2024-06-22",
+    "stint_code": "240622PX10",
+    "stint_text": "right femoral stress reaction",
+    "merged_date": "2024-08-21",
+    "merged_code": "240821PX60",
+    "merged_text": "right femoral stress reaction",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 665804,
+    "stint_start": "2025-05-25",
+    "stint_code": "250525PO7",
+    "stint_text": "left oblique strain",
+    "merged_date": "2025-07-31",
+    "merged_code": "250731PO60",
+    "merged_text": "left oblique strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 666158,
+    "stint_start": "2026-03-23",
+    "stint_code": "260323PX10",
+    "stint_text": "right shoulder impingement",
+    "merged_date": "2026-05-27",
+    "merged_code": "260527PX60",
+    "merged_text": "right shoulder impingement",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 668939,
+    "stint_start": "2026-07-19",
+    "stint_code": "260719PW10",
+    "stint_text": "left wrist inflammation",
+    "merged_date": "2026-08-03",
+    "merged_code": "260803PW10",
+    "merged_text": "left wrist inflammation",
+    "reason": "same injury as the first record of the stint",
+    "family_differs": false
+   },
+   {
+    "batter": 669003,
+    "stint_start": "2025-04-26",
+    "stint_code": "250426PO10",
+    "stint_text": "left oblique strain",
+    "merged_date": "2025-07-06",
+    "merged_code": "250706PO60",
+    "merged_text": "left oblique strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 669242,
+    "stint_start": "2024-03-25",
+    "stint_code": "240325PW10",
+    "stint_text": "right wrist sprain",
+    "merged_date": "2024-07-28",
+    "merged_code": "240728PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 669242,
+    "stint_start": "2024-03-25",
+    "stint_code": "240325PW10",
+    "stint_text": "right wrist sprain",
+    "merged_date": "2024-07-29",
+    "merged_code": "240729PW60",
+    "merged_text": "right wrist sprain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 669720,
+    "stint_start": "2025-05-29",
+    "stint_code": "250529PX10",
+    "stint_text": "left foot contusion",
+    "merged_date": "2025-05-30",
+    "merged_code": "250530PX10",
+    "merged_text": "left foot contusion",
+    "reason": "within 2 days of the previous placement record",
+    "family_differs": false
+   },
+   {
+    "batter": 669720,
+    "stint_start": "2026-05-02",
+    "stint_code": "260502PX10",
+    "stint_text": "left calf strain",
+    "merged_date": "2026-06-09",
+    "merged_code": "260609PX60",
+    "merged_text": "left calf strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 672820,
+    "stint_start": "2026-05-27",
+    "stint_code": "260527PW10",
+    "stint_text": "right wrist contusion",
+    "merged_date": "2026-08-02",
+    "merged_code": "260802PW60",
+    "merged_text": "right wrist contusion",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 676356,
+    "stint_start": "2025-04-07",
+    "stint_code": "250407PX10",
+    "stint_text": "right shoulder strain",
+    "merged_date": "2025-05-27",
+    "merged_code": "250527PX60",
+    "merged_text": "right shoulder strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 676356,
+    "stint_start": "2025-08-07",
+    "stint_code": "250807PH10",
+    "stint_text": "left hamstring strain",
+    "merged_date": "2025-09-13",
+    "merged_code": "250913PH60",
+    "merged_text": "left hamstring strain",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 680700,
+    "stint_start": "2025-04-18",
+    "stint_code": "250418PX10",
+    "stint_text": "right knee sprain",
+    "merged_date": "2025-07-10",
+    "merged_code": "250710PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 680869,
+    "stint_start": "2025-03-26",
+    "stint_code": "250326PW10",
+    "stint_text": "right wrist surgery",
+    "merged_date": "2025-05-23",
+    "merged_code": "250523PX60",
+    "merged_text": "",
+    "reason": "60-day placement",
+    "family_differs": false
+   },
+   {
+    "batter": 681460,
+    "stint_start": "2025-07-08",
+    "stint_code": "250708PX10",
+    "stint_text": "lower back strain",
+    "merged_date": "2025-07-09",
+    "merged_code": "250709PX10",
+    "merged_text": "",
+    "reason": "within 2 days of the previous placement record",
+    "family_differs": false
+   },
+   {
+    "batter": 682657,
+    "stint_start": "2024-03-25",
+    "stint_code": "240325PX10",
+    "stint_text": "right foot contusion",
+    "merged_date": "2024-04-17",
+    "merged_code": "240417PW60",
+    "merged_text": "left hamate fracture",
+    "reason": "60-day placement",
+    "family_differs": true
+   },
+   {
+    "batter": 686823,
+    "stint_start": "2025-05-20",
+    "stint_code": "250520PX10",
+    "stint_text": "left forearm inflammation",
+    "merged_date": "2025-05-22",
+    "merged_code": "250522PX10",
+    "merged_text": "left forearm inflammation",
+    "reason": "within 2 days of the previous placement record",
+    "family_differs": false
+   },
+   {
+    "batter": 693304,
+    "stint_start": "2025-03-28",
+    "stint_code": "250328PX10",
+    "stint_text": "non-displaced left ankle fracture",
+    "merged_date": "2025-05-20",
+    "merged_code": "250520PX60",
+    "merged_text": "non-displaced left ankle fracture",
+    "reason": "60-day placement",
+    "family_differs": false
+   }
+  ],
+  "kept_records": [
+   {
+    "batter": 643217,
+    "previous_stint_start": "2025-04-07",
+    "previous_text": "left adductor strain",
+    "kept_date": "2025-05-05",
+    "kept_code": "250505PX10",
+    "kept_text": "left calf strain"
+   },
+   {
+    "batter": 664040,
+    "previous_stint_start": "2025-07-08",
+    "previous_text": "left oblique tightness",
+    "kept_date": "2025-07-20",
+    "kept_code": "250720PX10",
+    "kept_text": "left ankle/foot tendinitis"
+   },
+   {
+    "batter": 665161,
+    "previous_stint_start": "2025-06-28",
+    "previous_text": "small rib fracture on left side",
+    "kept_date": "2025-09-25",
+    "kept_code": "250925PO10",
+    "kept_text": "left oblique strain"
+   },
+   {
+    "batter": 668904,
+    "previous_stint_start": "2025-03-24",
+    "previous_text": "left hamstring strain",
+    "kept_date": "2025-04-10",
+    "kept_code": "250410PX10",
+    "kept_text": "left knee sprain"
+   }
+  ]
+ }
+}

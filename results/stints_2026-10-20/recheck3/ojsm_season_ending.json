@@ -1,0 +1,1095 @@
+{
+ "note": "python3 ojsm_season_ending.py IL_FILE CODED_CSV FG_POSITION_XLSX FG_2026_CSV STATCAST_DIR AJSM_SEASON_JSON OUT_JSON",
+ "inputs": {
+  "il": "2a6dca24e4507673",
+  "coded": "bc0da2295f2c9895",
+  "statcast_files": [
+   "statcast_2024.parquet",
+   "statcast_2025.parquet",
+   "statcast_2026.parquet"
+  ]
+ },
+ "last_regular_season_game": {
+  "2024": "2024-09-30",
+  "2025": "2025-09-28",
+  "2026": "2026-09-27"
+ },
+ "placements": 688,
+ "all": {
+  "placements": 688,
+  "season_ending_n": 133,
+  "season_ending_share": 0.1933139534883721,
+  "stint_median": 24.0,
+  "stint_q1": 13.0,
+  "stint_q3": 40.0,
+  "stint_n": 540
+ },
+ "all_ajsm_season_rule": {
+  "placements": 688,
+  "season_ending_n": 92,
+  "season_ending_share": 0.13372093023255813,
+  "stint_median": 23.0,
+  "stint_q1": 12.75,
+  "stint_q3": 39.25,
+  "stint_n": 596
+ },
+ "changed_by_reason": {
+  "activated after the last regular-season game, before October 1": 56,
+  "played again before the next placement record, no activation recorded": 14,
+  "no activation before the next placement record (the hitter did not play); activated later that season": 1
+ },
+ "stints_no_longer_counted": 56,
+ "mid_season_activation_without_further_games": 5,
+ "changed": [
+  {
+   "batter": "518595",
+   "code": "250912PX7",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "519317",
+   "code": "260425PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "575929",
+   "code": "250916PX10",
+   "fam": "other",
+   "region": "shoulder",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "592626",
+   "code": "260919PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "605141",
+   "code": "240617PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "44",
+   "games_before_next": "44",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "608369",
+   "code": "250829PX10",
+   "fam": "other",
+   "region": "unspecified",
+   "mechanism": "unspecified",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "609280",
+   "code": "260720PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "621439",
+   "code": "260827PX10",
+   "fam": "other",
+   "region": "hip_groin",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "642715",
+   "code": "260824PX10",
+   "fam": "other",
+   "region": "elbow_forearm_arm",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "643217",
+   "code": "250407PX10",
+   "fam": "other",
+   "region": "hip_groin",
+   "mechanism": "muscle_strain",
+   "games_after": "107",
+   "games_before_next": "15",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "643217",
+   "code": "250921PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "643565",
+   "code": "250921PX10",
+   "fam": "other",
+   "region": "knee",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "645277",
+   "code": "250923PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "649966",
+   "code": "260807PX10",
+   "fam": "other",
+   "region": "thigh_quad",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "650489",
+   "code": "260902PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "656555",
+   "code": "260819PX10",
+   "fam": "other",
+   "region": "back_neck",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "657041",
+   "code": "250705PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "657656",
+   "code": "250925PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "660688",
+   "code": "250706PX7",
+   "fam": "other",
+   "region": "unspecified",
+   "mechanism": "unspecified",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "662139",
+   "code": "260923PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "663616",
+   "code": "260915PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "663698",
+   "code": "260807PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "663757",
+   "code": "260905PH10",
+   "fam": "hamstring",
+   "region": "hamstring",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "663837",
+   "code": "250810PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "664034",
+   "code": "250922PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "664040",
+   "code": "250708PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "50",
+   "games_before_next": "2",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "664728",
+   "code": "250918PH10",
+   "fam": "hamstring",
+   "region": "hamstring",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "665161",
+   "code": "250628PX10",
+   "fam": "other",
+   "region": "oblique_abdominal",
+   "mechanism": "fracture",
+   "games_after": "43",
+   "games_before_next": "43",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "665161",
+   "code": "250925PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "665804",
+   "code": "250814PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "666018",
+   "code": "240327PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "44",
+   "games_before_next": "44",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "666134",
+   "code": "250920PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "666182",
+   "code": "250907PX10",
+   "fam": "other",
+   "region": "knee",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "666971",
+   "code": "250902PX10",
+   "fam": "other",
+   "region": "knee",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "667472",
+   "code": "240715PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "fracture",
+   "games_after": "4",
+   "games_before_next": "4",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "667472",
+   "code": "250924PX10",
+   "fam": "other",
+   "region": "knee",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "668904",
+   "code": "250324PH10",
+   "fam": "hamstring",
+   "region": "hamstring",
+   "mechanism": "muscle_strain",
+   "games_after": "105",
+   "games_before_next": "0",
+   "activation": NaN,
+   "changed": "no activation before the next placement record (the hitter did not play); activated later that season"
+  },
+  {
+   "batter": "669065",
+   "code": "250817PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "669257",
+   "code": "250910PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "669357",
+   "code": "250713PX10",
+   "fam": "other",
+   "region": "back_neck",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "45",
+   "games_before_next": "45",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "670242",
+   "code": "250918PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "670541",
+   "code": "250916PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "673357",
+   "code": "250827PH10",
+   "fam": "hamstring",
+   "region": "hamstring",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "673357",
+   "code": "260905PH10",
+   "fam": "hamstring",
+   "region": "hamstring",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "673490",
+   "code": "250820PX10",
+   "fam": "other",
+   "region": "back_neck",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "24",
+   "games_before_next": "24",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "673962",
+   "code": "260926PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "676694",
+   "code": "250925PX10",
+   "fam": "other",
+   "region": "leg_ankle_foot",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "676724",
+   "code": "260918PX7",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "680869",
+   "code": "240424PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "113",
+   "games_before_next": "113",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "680869",
+   "code": "250920PX10",
+   "fam": "other",
+   "region": "shoulder",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "680977",
+   "code": "260822PX7",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "681807",
+   "code": "250924PX10",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "fracture",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "682626",
+   "code": "260513PX10",
+   "fam": "other",
+   "region": "knee",
+   "mechanism": "ligament_joint",
+   "games_after": "75",
+   "games_before_next": "75",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "683011",
+   "code": "260322PX10",
+   "fam": "other",
+   "region": "shoulder",
+   "mechanism": "surgery",
+   "games_after": "69",
+   "games_before_next": "69",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "683146",
+   "code": "250927PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "683357",
+   "code": "250914PX7",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "683357",
+   "code": "260913PX10",
+   "fam": "other",
+   "region": "back_neck",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "687263",
+   "code": "250913PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "687597",
+   "code": "240526PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "fracture",
+   "games_after": "32",
+   "games_before_next": "32",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "690993",
+   "code": "250919PX10",
+   "fam": "other",
+   "region": "chest_rib",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "690993",
+   "code": "260920PX10",
+   "fam": "other",
+   "region": "unspecified",
+   "mechanism": "unspecified",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "691016",
+   "code": "240710PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "impact",
+   "games_after": "12",
+   "games_before_next": "12",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "691026",
+   "code": "250913PX10",
+   "fam": "other",
+   "region": "knee",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "694212",
+   "code": "260922PX7",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "694384",
+   "code": "260821PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "694671",
+   "code": "250924PO10",
+   "fam": "oblique",
+   "region": "oblique_abdominal",
+   "mechanism": "muscle_strain",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "702616",
+   "code": "260915PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "inflammatory_overuse",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "805779",
+   "code": "240720PH10",
+   "fam": "hamstring",
+   "region": "hamstring",
+   "mechanism": "muscle_strain",
+   "games_after": "26",
+   "games_before_next": "26",
+   "activation": NaN,
+   "changed": "played again before the next placement record, no activation recorded"
+  },
+  {
+   "batter": "805811",
+   "code": "260918PX7",
+   "fam": "other",
+   "region": "head_face",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-28",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "807712",
+   "code": "250924PW10",
+   "fam": "hand_wrist",
+   "region": "hand_wrist",
+   "mechanism": "ligament_joint",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2025-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  },
+  {
+   "batter": "808982",
+   "code": "260921PX10",
+   "fam": "other",
+   "region": "hip_groin",
+   "mechanism": "impact",
+   "games_after": "0",
+   "games_before_next": "0",
+   "activation": "2026-09-29",
+   "changed": "activated after the last regular-season game, before October 1"
+  }
+ ],
+ "by_family": {
+  "hamstring": {
+   "placements": 93,
+   "season_ending_n": 8,
+   "season_ending_share": 0.08602150537634409,
+   "stint_median": 23.0,
+   "stint_q1": 13.0,
+   "stint_q3": 31.0,
+   "stint_n": 83
+  },
+  "hand_wrist": {
+   "placements": 116,
+   "season_ending_n": 23,
+   "season_ending_share": 0.19827586206896552,
+   "stint_median": 26.0,
+   "stint_q1": 14.0,
+   "stint_q3": 52.0,
+   "stint_n": 89
+  },
+  "oblique": {
+   "placements": 88,
+   "season_ending_n": 15,
+   "season_ending_share": 0.17045454545454544,
+   "stint_median": 29.0,
+   "stint_q1": 15.5,
+   "stint_q3": 39.0,
+   "stint_n": 71
+  },
+  "other": {
+   "placements": 391,
+   "season_ending_n": 87,
+   "season_ending_share": 0.22250639386189258,
+   "stint_median": 20.0,
+   "stint_q1": 13.0,
+   "stint_q3": 41.0,
+   "stint_n": 297
+  }
+ },
+ "by_region": {
+  "back_neck": {
+   "placements": 51,
+   "season_ending_n": 9,
+   "season_ending_share": 0.17647058823529413,
+   "stint_median": 17.5,
+   "stint_q1": 11.0,
+   "stint_q3": 29.25,
+   "stint_n": 40
+  },
+  "chest_rib": {
+   "placements": 13,
+   "season_ending_n": 1,
+   "season_ending_share": 0.07692307692307693,
+   "stint_median": 15.5,
+   "stint_q1": 13.0,
+   "stint_q3": 22.25,
+   "stint_n": 12
+  },
+  "elbow_forearm_arm": {
+   "placements": 30,
+   "season_ending_n": 8,
+   "season_ending_share": 0.26666666666666666,
+   "stint_median": 48.5,
+   "stint_q1": 18.0,
+   "stint_q3": 82.0,
+   "stint_n": 22
+  },
+  "hamstring": {
+   "placements": 93,
+   "season_ending_n": 8,
+   "season_ending_share": 0.08602150537634409,
+   "stint_median": 23.0,
+   "stint_q1": 13.0,
+   "stint_q3": 31.0,
+   "stint_n": 83
+  },
+  "hand_wrist": {
+   "placements": 116,
+   "season_ending_n": 23,
+   "season_ending_share": 0.19827586206896552,
+   "stint_median": 26.0,
+   "stint_q1": 14.0,
+   "stint_q3": 52.0,
+   "stint_n": 89
+  },
+  "head_face": {
+   "placements": 39,
+   "season_ending_n": 8,
+   "season_ending_share": 0.20512820512820512,
+   "stint_median": 9.0,
+   "stint_q1": 7.0,
+   "stint_q3": 14.5,
+   "stint_n": 31
+  },
+  "hip_groin": {
+   "placements": 46,
+   "season_ending_n": 11,
+   "season_ending_share": 0.2391304347826087,
+   "stint_median": 28.5,
+   "stint_q1": 13.0,
+   "stint_q3": 35.0,
+   "stint_n": 34
+  },
+  "illness": {
+   "placements": 4,
+   "season_ending_n": 1,
+   "season_ending_share": 0.25,
+   "stint_median": 13.0,
+   "stint_q1": 12.0,
+   "stint_q3": 17.5,
+   "stint_n": 3
+  },
+  "knee": {
+   "placements": 42,
+   "season_ending_n": 12,
+   "season_ending_share": 0.2857142857142857,
+   "stint_median": 29.0,
+   "stint_q1": 13.0,
+   "stint_q3": 43.0,
+   "stint_n": 29
+  },
+  "leg_ankle_foot": {
+   "placements": 90,
+   "season_ending_n": 16,
+   "season_ending_share": 0.17777777777777778,
+   "stint_median": 22.0,
+   "stint_q1": 15.0,
+   "stint_q3": 47.0,
+   "stint_n": 73
+  },
+  "oblique_abdominal": {
+   "placements": 94,
+   "season_ending_n": 17,
+   "season_ending_share": 0.18085106382978725,
+   "stint_median": 27.5,
+   "stint_q1": 15.0,
+   "stint_q3": 38.75,
+   "stint_n": 74
+  },
+  "shoulder": {
+   "placements": 45,
+   "season_ending_n": 14,
+   "season_ending_share": 0.3111111111111111,
+   "stint_median": 35.0,
+   "stint_q1": 19.5,
+   "stint_q3": 55.0,
+   "stint_n": 30
+  },
+  "thigh_quad": {
+   "placements": 15,
+   "season_ending_n": 1,
+   "season_ending_share": 0.06666666666666667,
+   "stint_median": 25.5,
+   "stint_q1": 14.75,
+   "stint_q3": 42.5,
+   "stint_n": 14
+  },
+  "unspecified": {
+   "placements": 10,
+   "season_ending_n": 4,
+   "season_ending_share": 0.4,
+   "stint_median": 20.5,
+   "stint_q1": 11.0,
+   "stint_q3": 30.75,
+   "stint_n": 6
+  }
+ },
+ "by_mechanism": {
+  "fracture": {
+   "placements": 77,
+   "season_ending_n": 16,
+   "season_ending_share": 0.2077922077922078,
+   "stint_median": 37.5,
+   "stint_q1": 19.0,
+   "stint_q3": 60.75,
+   "stint_n": 56
+  },
+  "illness": {
+   "placements": 6,
+   "season_ending_n": 1,
+   "season_ending_share": 0.16666666666666666,
+   "stint_median": 13.0,
+   "stint_q1": 13.0,
+   "stint_q3": 22.0,
+   "stint_n": 5
+  },
+  "impact": {
+   "placements": 69,
+   "season_ending_n": 14,
+   "season_ending_share": 0.2028985507246377,
+   "stint_median": 15.0,
+   "stint_q1": 9.0,
+   "stint_q3": 29.75,
+   "stint_n": 54
+  },
+  "inflammatory_overuse": {
+   "placements": 134,
+   "season_ending_n": 37,
+   "season_ending_share": 0.27611940298507465,
+   "stint_median": 19.0,
+   "stint_q1": 11.25,
+   "stint_q3": 32.0,
+   "stint_n": 94
+  },
+  "ligament_joint": {
+   "placements": 90,
+   "season_ending_n": 22,
+   "season_ending_share": 0.24444444444444444,
+   "stint_median": 19.0,
+   "stint_q1": 12.0,
+   "stint_q3": 35.0,
+   "stint_n": 67
+  },
+  "muscle_strain": {
+   "placements": 280,
+   "season_ending_n": 38,
+   "season_ending_share": 0.1357142857142857,
+   "stint_median": 24.0,
+   "stint_q1": 13.0,
+   "stint_q3": 37.0,
+   "stint_n": 238
+  },
+  "other": {
+   "placements": 4,
+   "season_ending_n": 0,
+   "season_ending_share": 0.0,
+   "stint_median": 47.0,
+   "stint_q1": 32.0,
+   "stint_q3": 73.0,
+   "stint_n": 4
+  },
+  "surgery": {
+   "placements": 18,
+   "season_ending_n": 1,
+   "season_ending_share": 0.05555555555555555,
+   "stint_median": 72.0,
+   "stint_q1": 56.25,
+   "stint_q3": 100.25,
+   "stint_n": 16
+  },
+  "unspecified": {
+   "placements": 10,
+   "season_ending_n": 4,
+   "season_ending_share": 0.4,
+   "stint_median": 20.5,
+   "stint_q1": 11.0,
+   "stint_q3": 30.75,
+   "stint_n": 6
+  }
+ },
+ "by_impact": {
+  "False": {
+   "placements": 542,
+   "season_ending_n": 103,
+   "season_ending_share": 0.1900369003690037,
+   "stint_median": 23.0,
+   "stint_q1": 13.0,
+   "stint_q3": 38.0,
+   "stint_n": 430
+  },
+  "True": {
+   "placements": 146,
+   "season_ending_n": 30,
+   "season_ending_share": 0.2054794520547945,
+   "stint_median": 24.5,
+   "stint_q1": 13.0,
+   "stint_q3": 52.0,
+   "stint_n": 110
+  }
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "note": "TRANSACTIONS_JSON transactions_2024-01-01_2026-10-05.json (MLB Stats API date-range pull of every transaction; repo/data_public/statsapi/) CORRECTED_IL_FILE repo/data_public/il_transactions_hitters_2024_2026_corrected.txt (placement records, from the players' transaction histories, a separate MLB Stats API route; ajsm_il_coding.py)",
+ "position_players": {
+  "2024": 292,
+  "2025": 367,
+  "2026": 364
+ },
+ "pitchers": {
+  "2024": 476,
+  "2025": 448,
+  "2026": 469
+ },
+ "position_players_covered_by_the_il_file": {
+  "2024": 195,
+  "2025": 278,
+  "2026": 259
+ },
+ "corrected_il_file_placement_records": {
+  "2024": 199,
+  "2025": 279,
+  "2026": 261
+ },
+ "position_players_by_list": {
+  "7": {
+   "2024": 7,
+   "2025": 22,
+   "2026": 21
+  },
+  "10": {
+   "2024": 270,
+   "2025": 330,
+   "2026": 316
+  },
+  "15": {
+   "2024": 2,
+   "2026": 1
+  },
+  "60": {
+   "2024": 13,
+   "2025": 15,
+   "2026": 26
+  }
+ },
+ "position_players_2024_over_mean_2025_2026": 0.79890560875513,
+ "pitchers_2024_over_mean_2025_2026": 1.0381679389312977,
+ "position_players_covered_by_the_il_file_2024_over_mean_2025_2026": 0.7262569832402235,
+ "corrected_il_file_placement_records_2024_over_mean_2025_2026": 0.737037037037037
+}

@@ -1,0 +1,19 @@
+[     4s] pitches 2141219
+[    11s] batter-games 147109 placements 712 label end 2026-09-27 covered hitters 420
+[    27s] F4a done {"diff_all_swings": -0.06431599708054075, "se_all_swings": 0.0688665641694622, "diff": -0.012418551876972479, "se": 0.04807844625398036, "p": 0.7961771645616709, "lo": -0.10665057496741867, "hi": 0.08181347121347371, "ci90": [-0.0915005585760235, 0.06666345482207854], "n_inj": 543, "equivalent_0p5": true, "inj_raw_mean": 0.06431581890698355}
+[    27s] stints with post-return games 466
+{
+ "estimates_reproduced": 294,
+ "rows_prespecified_condition": 15402,
+ "rows_any_eligible_control": 15426,
+ "stints_with_a_dropped_row": 7,
+ "max_abs_change_by_outcome": {
+  "bat_speed": 0.03202985822900264,
+  "bat_speed_all_swings": 0.0385843462644197,
+  "swing_len": 0.0017709413247260532,
+  "fast_swing": 0.010138545991079455,
+  "ev": 0.08205182658169524,
+  "hard_hit": 0.0030407467294456996,
+  "xwoba": 0.0023293416561319096
+ }
+}

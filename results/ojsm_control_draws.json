@@ -1,0 +1,96 @@
+{
+ "note": "Post hoc, added after the cold read of 2026-10-17 (PLAN_ADDENDUM_2026-10-17h.md, item 10): how much the return estimates\nwith 5 matched controls depend on which 5 controls were drawn.",
+ "n_draws": 1000,
+ "seed_redraws": 20261017,
+ "seed_prespecified": 506,
+ "usable_controls_per_stint_median": 202.0,
+ "stints_with_5_or_fewer_usable_controls": 0,
+ "hand_wrist_1-10": {
+  "prespecified": -0.5593754507606118,
+  "median": -0.5694922008453547,
+  "p2.5": -0.6947463679263808,
+  "p97.5": -0.45742347988379745,
+  "min": -0.7634544810041544,
+  "max": -0.3837401950483465,
+  "share_below_prespecified": 0.578,
+  "share_ci_below_0": 1.0
+ },
+ "oblique_1-10": {
+  "prespecified": -0.4611560550787831,
+  "median": -0.37722053352888785,
+  "p2.5": -0.5235296283107819,
+  "p97.5": -0.2414598116043431,
+  "min": -0.5918050101415808,
+  "max": -0.15808482709467658,
+  "share_below_prespecified": 0.125,
+  "share_ci_below_0": 0.839
+ },
+ "hand_wrist_21-40": {
+  "prespecified": -0.0768343271586905,
+  "median": -0.04795118322472828,
+  "p2.5": -0.2230563316406005,
+  "p97.5": 0.13020661557094218,
+  "min": -0.3096223228873051,
+  "max": 0.24251941397869078,
+  "share_below_prespecified": 0.372,
+  "share_equivalent": 0.969,
+  "prespecified_equivalent": true
+ },
+ "oblique_21-40": {
+  "prespecified": 0.014188367421601839,
+  "median": 0.07860284680464458,
+  "p2.5": -0.09031463364462324,
+  "p97.5": 0.24715333259992892,
+  "min": -0.17231761936173565,
+  "max": 0.32516024637248603,
+  "share_below_prespecified": 0.234,
+  "share_equivalent": 0.815,
+  "prespecified_equivalent": true
+ },
+ "hand_wrist_41-60": {
+  "prespecified": -0.5380689220838917,
+  "median": -0.36030907394315137,
+  "p2.5": -0.5953724451723477,
+  "p97.5": -0.10137085784984973,
+  "min": -0.7215231884892881,
+  "max": 0.004008999515594782,
+  "share_below_prespecified": 0.08,
+  "share_ci_below_0": 0.357
+ },
+ "hand_wrist_minus_all_other": {
+  "prespecified": -0.42772298417042726,
+  "median": -0.4531845828926976,
+  "p2.5": -0.5931766846975813,
+  "p97.5": -0.33210555719138335,
+  "min": -0.654509531702875,
+  "max": -0.236693369588841,
+  "share_below_prespecified": 0.648,
+  "share_ci_below_0": 0.989
+ },
+ "hand_wrist_minus_oblique": {
+  "prespecified": -0.09821939568182841,
+  "median": -0.19194610563488973,
+  "p2.5": -0.3833287580396723,
+  "p97.5": 0.0023420227804171324,
+  "min": -0.5657957674322092,
+  "max": 0.09921654665310209,
+  "share_below_prespecified": 0.848,
+  "share_ci_below_0": 0.006
+ },
+ "hand_wrist_minus_hamstring": {
+  "prespecified": -0.69808940344194,
+  "median": -0.6422606241373832,
+  "p2.5": -0.8085618915483623,
+  "p97.5": -0.47321541829024727,
+  "min": -0.9161111952926653,
+  "max": -0.3547876928953652,
+  "share_below_prespecified": 0.262,
+  "share_ci_below_0": 0.992
+ },
+ "every_eligible_control": {
+  "hand_wrist_1-10": -0.5723567446729496,
+  "oblique_1-10": -0.38129951337581247,
+  "hand_wrist_21-40": -0.055082040660735056,
+  "hand_wrist_41-60": -0.35654698825355896
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "note": "python3 ojsm_f1_pa_iqr.py IL_FILE FG_BATTRACK_CSV FG_POSITION_XLSX FG_2026_CSV PUBLISHED_SEASON_JSON OUT_JSON",
+ "il_sha16": "0aba8a5774af1756",
+ "n": 504,
+ "median": 519.5,
+ "q1": 430.75,
+ "q3": 621.0,
+ "min": 330.0,
+ "max": 735.0
+}

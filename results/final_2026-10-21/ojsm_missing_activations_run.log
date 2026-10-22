@@ -1,0 +1,15 @@
+{
+ "placements_with_games_but_no_activation": 15,
+ "by_family": {
+  "other": 8,
+  "hand_wrist": 4,
+  "oblique": 2,
+  "hamstring": 1
+ },
+ "by_category": {
+  "no transaction recorded": 6,
+  "recalled from a minor-league club": 4,
+  "activated without naming a list": 3,
+  "activated from the All-Star reserve list": 2
+ }
+}

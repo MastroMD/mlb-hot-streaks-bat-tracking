@@ -1,0 +1,63 @@
+{
+ "note": "python3 ojsm_il_final_2026-10-21.py STINTS_JSON CORR_STINTS ORIG_STINTS CODED_CSV OUT_CORR_STINTS OUT_ORIG_STINTS OUT_CODED_CSV OUT_JSON STINTS_JSON repo/results/stints_2026-10-20/ojsm_il_stints.json (ojsm_il_stints.py: the records merged into each stint) CORR_STINTS repo/data_public/il_transactions_hitters_2024_2026_corrected_stints.txt ORIG_STINTS repo/data_public/il_transactions_hitters_2024_2026_stints.txt CODED_CSV repo/data_public/il_placements_coded_2023_2026.csv (1) A stint into which a record naming a different injury was merged (in both files, 1 stint: a hamate fracture placed on the 60-day list during a stint for a foot contusion) is classified by that later injury, the one for which the hitter stayed on the IL until his activation: the family letter of the stint in both stint files, and the injury text, region, mechanism, impact flag and text family of its first record in the coded file, are those of the later record. A merged record with the same injury text (or none) changes nothing. (2) Body region: the region rule of ajsm_il_coding.py matches 'side' (oblique/abdominal) before 'rib' (chest or rib), so the 2 placements whose text names a rib fracture 'on the left side' or on the 'right side' were coded oblique/abdominal; they are coded chest or rib. No other placement text contains 'side'. The input files are not changed. Activations missing from the IL file are added afterwards by ojsm_missing_activations.py.",
+ "relabeled_stints": {
+  "original": [
+   {
+    "batter": 682657,
+    "stint_code": "240325PX10",
+    "stint_text": "right foot contusion",
+    "merged_code": "240417PW60",
+    "merged_text": "left hamate fracture",
+    "merged_date": "2024-04-17",
+    "new_code": "240325PW10"
+   }
+  ],
+  "corrected": [
+   {
+    "batter": 682657,
+    "stint_code": "240325PX10",
+    "stint_text": "right foot contusion",
+    "merged_code": "240417PW60",
+    "merged_text": "left hamate fracture",
+    "merged_date": "2024-04-17",
+    "new_code": "240325PW10",
+    "coded_before": {
+     "text": "Right foot contusion",
+     "region": "leg_ankle_foot",
+     "mechanism": "impact",
+     "impact": "True",
+     "fam4_from_text": "X"
+    },
+    "coded_after": {
+     "text": "Left hamate fracture",
+     "region": "hand_wrist",
+     "mechanism": "fracture",
+     "impact": "True",
+     "fam4_from_text": "W"
+    }
+   }
+  ]
+ },
+ "rib_recoded": [
+  {
+   "batter": 665161,
+   "name": "Jeremy Pe\u00f1a",
+   "day": "2025-06-28",
+   "text": "Small rib fracture on left side",
+   "region_before": "oblique_abdominal",
+   "region_after": "chest_rib"
+  },
+  {
+   "batter": 800050,
+   "name": "Chase DeLauter",
+   "day": "2026-06-14",
+   "text": "Right side rib fracture",
+   "region_before": "oblique_abdominal",
+   "region_after": "chest_rib"
+  }
+ ],
+ "stint_codes_changed": {
+  "corrected": 1,
+  "original": 1
+ }
+}

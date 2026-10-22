@@ -1,0 +1,7 @@
+{
+ "note": "paper_counts.py counts tracked swings over every regular-season pitch (bat speed and swing length both recorded) but competitive swings from the batter-game panel, which keeps only batter-games with at least 1 PA, so 78 competitive swings in games without a completed PA were left out of the second count. This counts both over every regular-season pitch with the project's own functions (common3.adjust, hot_streak_study.pitch_features: Baseball Savant's competitive-swing rule) and reports the panel count for comparison.",
+ "pitches": 2141219,
+ "tracked_swings": 979233,
+ "competitive_swings": 885318,
+ "competitive_swings_in_batter_games_with_a_pa": 885240
+}

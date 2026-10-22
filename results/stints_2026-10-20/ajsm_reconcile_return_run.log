@@ -1,0 +1,58 @@
+[     9s] batter-games 147109
+[    45s] stints 650
+== all
+  -0.14 (-0.29 to +0.00) n= 385 | max sample -0.13 (-0.28 to +0.01) n= 431  1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls
+  -0.29 (-0.43 to -0.15) n= 385 | max sample -0.29 (-0.43 to -0.15) n= 431  2 step 1 with matched controls
+  -0.01 (-0.18 to +0.16) n= 385 | max sample -0.04 (-0.19 to +0.11) n= 476  3 step 1 with games 1-10 in place of 30 days
+  +0.04 (-0.14 to +0.21) n= 385 | max sample -0.02 (-0.18 to +0.14) n= 504  4 step 3 with this study's baseline
+  -0.06 (-0.19 to +0.06) n= 385 | max sample -0.03 (-0.14 to +0.09) n= 502  5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)
+  -0.19 (-0.32 to -0.07) n= 385 | max sample -0.18 (-0.29 to -0.06) n= 463  6 this study's design: step 5 with matched controls
+  -0.23 (-0.35 to -0.12) n= 385 | max sample -0.22 (-0.32 to -0.11) n= 461  7 this study's design over the first 30 days
+  -0.14 (-0.31 to +0.04) n= 385 | max sample -0.16 (-0.32 to +0.00) n= 465  8 companion metric (unadjusted, every tracked swing) in this study's design
+  -0.35 (-0.52 to -0.17) n= 230  1b companion design, 2024-2025 activations only
+  +0.15 (+0.13 to +0.17) n= 385  control change under the companion design
+== oblique
+  +0.16 (-0.22 to +0.55) n=  45 | max sample +0.14 (-0.20 to +0.47) n=  54  1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls
+  -0.07 (-0.45 to +0.32) n=  45 | max sample -0.09 (-0.43 to +0.24) n=  54  2 step 1 with matched controls
+  +0.21 (-0.27 to +0.70) n=  45 | max sample +0.12 (-0.27 to +0.51) n=  59  3 step 1 with games 1-10 in place of 30 days
+  +0.12 (-0.37 to +0.60) n=  45 | max sample -0.00 (-0.41 to +0.40) n=  65  4 step 3 with this study's baseline
+  -0.26 (-0.56 to +0.04) n=  45 | max sample -0.17 (-0.42 to +0.09) n=  64  5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)
+  -0.40 (-0.70 to -0.10) n=  45 | max sample -0.36 (-0.62 to -0.10) n=  59  6 this study's design: step 5 with matched controls
+  -0.43 (-0.72 to -0.13) n=  45 | max sample -0.38 (-0.63 to -0.12) n=  59  7 this study's design over the first 30 days
+  -0.07 (-0.56 to +0.43) n=  45 | max sample -0.17 (-0.60 to +0.27) n=  60  8 companion metric (unadjusted, every tracked swing) in this study's design
+  +0.05 (-0.46 to +0.56) n=  29  1b companion design, 2024-2025 activations only
+  +0.23 (+0.16 to +0.30) n=  45  control change under the companion design
+== hand_wrist
+  -0.66 (-1.03 to -0.29) n=  63 | max sample -0.63 (-1.01 to -0.26) n=  66  1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls
+  -0.74 (-1.12 to -0.37) n=  63 | max sample -0.73 (-1.10 to -0.35) n=  66  2 step 1 with matched controls
+  -0.60 (-1.01 to -0.19) n=  63 | max sample -0.41 (-0.80 to -0.02) n=  77  3 step 1 with games 1-10 in place of 30 days
+  -0.49 (-0.92 to -0.06) n=  63 | max sample -0.34 (-0.70 to +0.02) n=  87  4 step 3 with this study's baseline
+  -0.36 (-0.65 to -0.06) n=  63 | max sample -0.31 (-0.58 to -0.05) n=  87  5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)
+  -0.45 (-0.75 to -0.16) n=  63 | max sample -0.51 (-0.78 to -0.24) n=  76  6 this study's design: step 5 with matched controls
+  -0.52 (-0.79 to -0.24) n=  63 | max sample -0.55 (-0.79 to -0.30) n=  76  7 this study's design over the first 30 days
+  -0.64 (-1.06 to -0.21) n=  63 | max sample -0.60 (-0.98 to -0.23) n=  76  8 companion metric (unadjusted, every tracked swing) in this study's design
+  -1.00 (-1.46 to -0.54) n=  36  1b companion design, 2024-2025 activations only
+  +0.08 (+0.04 to +0.13) n=  63  control change under the companion design
+== hamstring
+  +0.14 (-0.17 to +0.44) n=  63 | max sample +0.16 (-0.12 to +0.44) n=  73  1 companion design: unadjusted, every tracked swing, 150-day baseline, first 30 days, no controls
+  -0.04 (-0.35 to +0.26) n=  63 | max sample -0.02 (-0.30 to +0.26) n=  73  2 step 1 with matched controls
+  +0.42 (+0.09 to +0.75) n=  63 | max sample +0.40 (+0.11 to +0.69) n=  79  3 step 1 with games 1-10 in place of 30 days
+  +0.49 (+0.10 to +0.88) n=  63 | max sample +0.40 (+0.05 to +0.76) n=  75  4 step 3 with this study's baseline
+  +0.25 (-0.06 to +0.56) n=  63 | max sample +0.23 (-0.07 to +0.53) n=  75  5 step 4 with ballpark-week adjustment and competitive swings (injured hitters only)
+  +0.12 (-0.19 to +0.44) n=  63 | max sample +0.08 (-0.22 to +0.38) n=  71  6 this study's design: step 5 with matched controls
+  +0.02 (-0.25 to +0.30) n=  63 | max sample -0.05 (-0.31 to +0.21) n=  70  7 this study's design over the first 30 days
+  +0.28 (-0.10 to +0.65) n=  63 | max sample +0.18 (-0.17 to +0.54) n=  71  8 companion metric (unadjusted, every tracked swing) in this study's design
+  +0.11 (-0.23 to +0.44) n=  36  1b companion design, 2024-2025 activations only
+  +0.18 (+0.13 to +0.22) n=  63  control change under the companion design
+{
+"inj|raw_all|b150|p30": 219,
+"inj|raw_all|b150|g10": 174,
+"inj|raw_all|bours|g10": 146,
+"inj|adj_comp|bours|g10": 148,
+"inj|adj_comp|bours|p30": 189,
+"ctl|raw_all|b150|p30": 169,
+"ctl|adj_comp|bours|g10": 155,
+"ctl|adj_comp|bours|p30": 155,
+"ctl|raw_all|bours|g10": 155
+}
+[    45s] wrote repo/results/stints_2026-10-20/ajsm_reconcile_return.json

@@ -1,0 +1,478 @@
+{
+ "note": "post hoc reconciliation with Paper 1; every per-SD estimate uses SD = 2.68 mph (Paper 1)",
+ "steps": {
+  "0 Paper 1 lagged as published (all pairs, count, Paper 1 covariates, offset)": {
+   "per_SD": 1.4656890732527725,
+   "lo": 1.1974515220547377,
+   "hi": 1.7940137198759776,
+   "p": 0.00020947378895228288,
+   "per_mph": 1.1533361753476197,
+   "n": 1320,
+   "events": 86,
+   "logb_per_SD": 0.38232548905489977,
+   "se_per_SD": 0.1031275113254765
+  },
+  "1 index seasons 2025-2026 only": {
+   "per_SD": 1.3495550488864863,
+   "lo": 1.0976019484922777,
+   "hi": 1.659343655937233,
+   "p": 0.004464974589691644,
+   "per_mph": 1.1183521672268477,
+   "n": 926,
+   "events": 71,
+   "logb_per_SD": 0.2997749447050723,
+   "se_per_SD": 0.10543224055475489
+  },
+  "2 + F1 eligibility (prior-season PA >= 330, >= 200 competitive swings, played)": {
+   "per_SD": 1.312467010299947,
+   "lo": 0.96796904386441,
+   "hi": 1.7795710142224062,
+   "p": 0.0800450878042515,
+   "per_mph": 1.1067839033729396,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.2719085801581878,
+   "se_per_SD": 0.15533864890511104
+  },
+  "3 + any oblique placement (binary, GEE logistic)": {
+   "per_SD": 1.3649958640496085,
+   "lo": 0.9814787858561017,
+   "hi": 1.8983738983694245,
+   "p": 0.064470520859172,
+   "per_mph": 1.1231096016020012,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.31115139863204583,
+   "se_per_SD": 0.16828891741541122
+  },
+  "4 + F1 covariates (age, prior PA, prior IL, season)": {
+   "per_SD": 1.1696857785558132,
+   "lo": 0.8643927231989856,
+   "hi": 1.5828046486698195,
+   "p": 0.3097895979895825,
+   "per_mph": 1.0602272415365652,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.15673514740262462,
+   "se_per_SD": 0.15431796944565723
+  },
+  "5 + F1 outcome labels (IL file, record-date dating, oblique family incl. intercostal)": {
+   "per_SD": 1.0690699200931937,
+   "lo": 0.7908394704355187,
+   "hi": 1.4451864591668167,
+   "p": 0.6641017346759168,
+   "per_mph": 1.0252344133866538,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.06678903691349881,
+   "se_per_SD": 0.15380067031222588
+  },
+  "6 + F1 exposure (FanGraphs season bat speed)": {
+   "per_SD": 1.070274505980512,
+   "lo": 0.7923525390037292,
+   "hi": 1.445679116005758,
+   "p": 0.6579592686682407,
+   "per_mph": 1.0256653037004804,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.06791516321643326,
+   "se_per_SD": 0.15340001245825624
+  },
+  "7 + F1 model (logistic, cluster-robust)": {
+   "per_SD": 1.0766688742595538,
+   "lo": 0.7961911447878086,
+   "hi": 1.4559517176095642,
+   "p": 0.6313906022257306,
+   "per_mph": 1.0279475469906931,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.07387189896022392,
+   "se_per_SD": 0.1539734128989748
+  },
+  "7b same with corrected IL dates": {
+   "per_SD": 1.0766688742595538,
+   "lo": 0.7961911447878086,
+   "hi": 1.4559517176095642,
+   "p": 0.6313906022257306,
+   "per_mph": 1.0279475469906931,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.07387189896022392,
+   "se_per_SD": 0.1539734128989748
+  }
+ },
+ "reverse": {
+  "0 F1 design on the overlap (labels: IL file original)": {
+   "per_SD": 1.0766688742595538,
+   "lo": 0.7961911447878086,
+   "hi": 1.4559517176095642,
+   "p": 0.6313906022257306,
+   "per_mph": 1.0279475469906931,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.07387189896022392,
+   "se_per_SD": 0.1539734128989748
+  },
+  "1 Paper 1 labels": {
+   "per_SD": 1.1698903913800165,
+   "lo": 0.86404001469645,
+   "hi": 1.5840047967270507,
+   "p": 0.3101817018998596,
+   "per_mph": 1.0602964412020066,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.15691006183999523,
+   "se_per_SD": 0.15461543866552463
+  },
+  "2 F1 labels, Paper 1 covariates": {
+   "per_SD": 1.249702337348623,
+   "lo": 0.8823513441907217,
+   "hi": 1.769993259779106,
+   "p": 0.2094096355888163,
+   "per_mph": 1.086730507310016,
+   "n": 503,
+   "events": 40,
+   "logb_per_SD": 0.2229053928356289,
+   "se_per_SD": 0.17758691107574232
+  },
+  "3 F1 labels, index 2025-2026, all covered hitters with >= 100 competitive swings (no PA rule)": {
+   "per_SD": 1.2080863972578726,
+   "lo": 0.9653633777031446,
+   "hi": 1.511837694435829,
+   "p": 0.0985441453443565,
+   "per_mph": 1.0730836553361351,
+   "n": 668,
+   "events": 61,
+   "logb_per_SD": 0.18903761786395995,
+   "se_per_SD": 0.11443281080696496
+  },
+  "4 F1 labels (corrected), all index seasons 2024-2026, covered hitters, Paper 1 covariates, Poisson": {
+   "per_SD": 1.3631016590375606,
+   "lo": 1.0910152810835596,
+   "hi": 1.7030431792170695,
+   "p": 0.006395007019911074,
+   "per_mph": 1.1225278039155664,
+   "n": 937,
+   "events": 77,
+   "logb_per_SD": 0.3097627347001926,
+   "se_per_SD": 0.11359899053807493
+  },
+  "5 Paper 1 labels on the same covered hitters (all index seasons)": {
+   "per_SD": 1.377370265221473,
+   "lo": 1.1080146327456517,
+   "hi": 1.7122055895734434,
+   "p": 0.003928387512143502,
+   "per_mph": 1.1268979549079583,
+   "n": 937,
+   "events": 75,
+   "logb_per_SD": 0.32017607628216854,
+   "se_per_SD": 0.1110236130587432
+  },
+  "6 Paper 1 labels, hitters NOT covered by the IL file (part-time; logistic)": {
+   "per_SD": 2.207785088556951,
+   "lo": 1.0813184204352602,
+   "hi": 4.507751745588851,
+   "p": 0.029654691796094607,
+   "per_mph": 1.3438230558777275,
+   "n": 383,
+   "events": 11,
+   "logb_per_SD": 0.791989790596586,
+   "se_per_SD": 0.3641881297547943
+  }
+ },
+ "labels": {
+  "F1-eligible pairs, index 2025-2026": {
+   "n": 503,
+   "paper1_yes": 40,
+   "f1_orig_yes": 40,
+   "f1_corr_yes": 40,
+   "both_orig": 37,
+   "paper1_only_orig": 3,
+   "f1_only_orig": 3,
+   "both_corr": 37,
+   "paper1_only_corr": 3,
+   "f1_only_corr": 3
+  },
+  "covered hitters, all index seasons": {
+   "n": 937,
+   "paper1_yes": 75,
+   "f1_orig_yes": 77,
+   "f1_corr_yes": 77,
+   "both_orig": 72,
+   "paper1_only_orig": 3,
+   "f1_only_orig": 5,
+   "both_corr": 72,
+   "paper1_only_corr": 3,
+   "f1_only_corr": 5
+  }
+ },
+ "discordant_F1_eligible": [
+  {
+   "mlbam": 646240,
+   "name": "Rafael Devers",
+   "Y": 2026,
+   "bs_T": 71.56,
+   "paper1_oblique": 1,
+   "f1_oblique_corr": 0,
+   "paper1_oblique_rows": [
+    [
+     "2026-09-13",
+     "2026-09-13",
+     "Core muscle injury."
+    ]
+   ],
+   "il_file_rows_Y": [
+    [
+     "2026-09-13",
+     "X"
+    ]
+   ],
+   "paper1_all_rows_Y": [
+    [
+     "2026-09-13",
+     "oblique_strict",
+     "Core muscle injury."
+    ]
+   ]
+  },
+  {
+   "mlbam": 656305,
+   "name": "Matt Chapman",
+   "Y": 2026,
+   "bs_T": 74.92,
+   "paper1_oblique": 1,
+   "f1_oblique_corr": 0,
+   "paper1_oblique_rows": [
+    [
+     "2026-07-01",
+     "2026-07-01",
+     "Abdominal strain."
+    ]
+   ],
+   "il_file_rows_Y": [
+    [
+     "2026-07-01",
+     "X"
+    ]
+   ],
+   "paper1_all_rows_Y": [
+    [
+     "2026-07-01",
+     "oblique_strict",
+     "Abdominal strain."
+    ]
+   ]
+  },
+  {
+   "mlbam": 663586,
+   "name": "Austin Riley",
+   "Y": 2025,
+   "bs_T": 75.2,
+   "paper1_oblique": 2,
+   "f1_oblique_corr": 0,
+   "paper1_oblique_rows": [
+    [
+     "2025-07-12",
+     "2025-07-12",
+     "Strained right abdomen."
+    ],
+    [
+     "2025-08-04",
+     "2025-08-04",
+     "Strained lower abdominal muscle."
+    ]
+   ],
+   "il_file_rows_Y": [
+    [
+     "2025-07-12",
+     "X"
+    ],
+    [
+     "2025-08-04",
+     "X"
+    ]
+   ],
+   "paper1_all_rows_Y": [
+    [
+     "2025-07-12",
+     "oblique_strict",
+     "Strained right abdomen."
+    ],
+    [
+     "2025-08-04",
+     "oblique_strict",
+     "Strained lower abdominal muscle."
+    ]
+   ]
+  },
+  {
+   "mlbam": 683002,
+   "name": "Gunnar Henderson",
+   "Y": 2025,
+   "bs_T": 76.21,
+   "paper1_oblique": 0,
+   "f1_oblique_corr": 1,
+   "paper1_oblique_rows": [],
+   "il_file_rows_Y": [
+    [
+     "2025-03-24",
+     "O"
+    ]
+   ],
+   "paper1_all_rows_Y": [
+    [
+     "2025-03-24",
+     "rib_costochondral",
+     "Right intercostal strain."
+    ]
+   ]
+  },
+  {
+   "mlbam": 686668,
+   "name": "Brenton Doyle",
+   "Y": 2026,
+   "bs_T": 70.71,
+   "paper1_oblique": 0,
+   "f1_oblique_corr": 1,
+   "paper1_oblique_rows": [],
+   "il_file_rows_Y": [
+    [
+     "2026-05-20",
+     "O"
+    ]
+   ],
+   "paper1_all_rows_Y": [
+    [
+     "2026-05-20",
+     "rib_costochondral",
+     "Left oblique contusion."
+    ]
+   ]
+  },
+  {
+   "mlbam": 694384,
+   "name": "Nolan Schanuel",
+   "Y": 2026,
+   "bs_T": 67.37,
+   "paper1_oblique": 0,
+   "f1_oblique_corr": 1,
+   "paper1_oblique_rows": [],
+   "il_file_rows_Y": [
+    [
+     "2026-05-24",
+     "X"
+    ],
+    [
+     "2026-08-21",
+     "O"
+    ]
+   ],
+   "paper1_all_rows_Y": [
+    [
+     "2026-05-24",
+     "ankle_foot",
+     "Left ankle inflammation."
+    ],
+    [
+     "2026-08-21",
+     "rib_costochondral",
+     "Right intercostal muscle strain."
+    ]
+   ]
+  }
+ ],
+ "exposure": {
+  "n": 503,
+  "r": 0.9999133652636385,
+  "mean_diff": -0.04026302923608381,
+  "max_abs_diff": 0.2540774281045941
+ },
+ "paper1_lagged_by_eligibility": {
+  "F1-eligible (regulars)": {
+   "per_SD": 1.4081170271340295,
+   "lo": 1.090762457151584,
+   "hi": 1.8178051042228225,
+   "p": 0.008619809242021095,
+   "per_mph": 1.1362194522015885,
+   "n": 744,
+   "events": 53,
+   "logb_per_SD": 0.3422533701441556,
+   "se_per_SD": 0.1302940900340047,
+   "oblique_rate_per_100": 7.123655913978495,
+   "bat_speed_mean": 71.72230160748522
+  },
+  "not F1-eligible": {
+   "per_SD": 1.5791952021767164,
+   "lo": 1.1038420146936372,
+   "hi": 2.259252187705603,
+   "p": 0.012394117266776236,
+   "per_mph": 1.1858867450696213,
+   "n": 576,
+   "events": 33,
+   "logb_per_SD": 0.4569153515571537,
+   "se_per_SD": 0.18271352886478767,
+   "oblique_rate_per_100": 5.729166666666666,
+   "bat_speed_mean": 70.91281780050174
+  }
+ },
+ "paper1_lagged_eligibility_interaction_p": 0.2373454909735656,
+ "paper1_lagged_by_index_season": {
+  "2024": {
+   "per_SD": 2.385576079117194,
+   "lo": 1.4111926361681977,
+   "hi": 4.032740168421534,
+   "p": 0.001170889968787512,
+   "per_mph": 1.3832255798074728,
+   "n": 394,
+   "events": 15,
+   "logb_per_SD": 0.8694406377803757,
+   "se_per_SD": 0.2678599232950924
+  },
+  "2025": {
+   "per_SD": 1.4777107674443428,
+   "lo": 1.1694294680602457,
+   "hi": 1.8672602083843282,
+   "p": 0.0010712574042801193,
+   "per_mph": 1.1568568993121775,
+   "n": 460,
+   "events": 49,
+   "logb_per_SD": 0.39049411152494307,
+   "se_per_SD": 0.11937658968571996
+  },
+  "2026": {
+   "per_SD": 1.0808237213462857,
+   "lo": 0.7033900118203988,
+   "hi": 1.6607854774644033,
+   "p": 0.7228658366634948,
+   "per_mph": 1.0294259217326218,
+   "n": 466,
+   "events": 22,
+   "logb_per_SD": 0.07772345537478104,
+   "se_per_SD": 0.21916694605873532
+  }
+ },
+ "f1_eligible_by_index_season_p1labels": {
+  "2025": {
+   "per_SD": 1.2420610769192615,
+   "lo": 0.864476924245575,
+   "hi": 1.7845655280436274,
+   "p": 0.24104496144665288,
+   "per_mph": 1.0842463461485183,
+   "n": 251,
+   "events": 27,
+   "logb_per_SD": 0.2167721585656697,
+   "se_per_SD": 0.18489940070546473
+  },
+  "2026": {
+   "per_SD": 1.0031027254459373,
+   "lo": 0.5676523967888603,
+   "hi": 1.7725902039506969,
+   "p": 0.991490899343686,
+   "per_mph": 1.0011566093747744,
+   "n": 252,
+   "events": 13,
+   "logb_per_SD": 0.0030979219267768874,
+   "se_per_SD": 0.29048160561572345
+  }
+ }
+}

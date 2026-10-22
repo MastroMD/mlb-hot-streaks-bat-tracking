@@ -1,0 +1,530 @@
+{
+ "family changes, record-date file": [
+  {
+   "batter": 645277,
+   "season": 2025,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "W"
+   ]
+  },
+  {
+   "batter": 669242,
+   "season": 2024,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "W"
+   ]
+  },
+  {
+   "batter": 682657,
+   "season": 2024,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "X"
+   ]
+  }
+ ],
+ "family changes, corrected file": [
+  {
+   "batter": 669242,
+   "season": 2024,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "W"
+   ]
+  },
+  {
+   "batter": 682657,
+   "season": 2024,
+   "records": [
+    "W",
+    "X"
+   ],
+   "stints": [
+    "X"
+   ]
+  }
+ ],
+ "ajsm_season.json: F2 and the any, oblique, hamstring and hand/wrist F1 results identical": true,
+ "ajsm_season.json: F1 other-family events": {
+  "records": 181,
+  "stints": 180
+ },
+ "ajsm_season.json: F1 other-family model identical": false,
+ "ajsm_season_corrected.json: F2 and the any, oblique, hamstring and hand/wrist F1 results identical": true,
+ "ajsm_season_corrected.json: F1 other-family events": {
+  "records": 182,
+  "stints": 182
+ },
+ "ajsm_season_corrected.json: F1 other-family model identical": true,
+ "F3": {
+  "placements": {
+   "records": 714,
+   "stints": 688
+  },
+  "hitters_with_placement": {
+   "records": 295,
+   "stints": 295
+  },
+  "cohort_hitters": {
+   "records": 398,
+   "stints": 398
+  },
+  "by_family": {
+   "records": {
+    "other": 408,
+    "hand_wrist": 121,
+    "hamstring": 94,
+    "oblique": 91
+   },
+   "stints": {
+    "other": 391,
+    "hand_wrist": 116,
+    "hamstring": 93,
+    "oblique": 88
+   }
+  },
+  "per_1000_PA_by_season": {
+   "records": {
+    "2024": 1.2896759104577347,
+    "2025": 1.739974126778784,
+    "2026": 1.6538146021328959
+   },
+   "stints": {
+    "2024": 1.242900100233879,
+    "2025": 1.6688227684346701,
+    "2026": 1.601312551271534
+   }
+  },
+  "season_ending_share_all": {
+   "records": 0.16526610644257703,
+   "stints": 0.13372093023255813
+  },
+  "stint_days_all": {
+   "records": {
+    "median": 22.0,
+    "q1": 12.0,
+    "q3": 38.0,
+    "n": 596
+   },
+   "stints": {
+    "median": 23.0,
+    "q1": 12.75,
+    "q3": 39.25,
+    "n": 596
+   }
+  },
+  "repeat_same_family_365d": {
+   "records": {
+    "hamstring": {
+     "repeats": 12,
+     "placements": 94
+    },
+    "hand_wrist": {
+     "repeats": 21,
+     "placements": 121
+    },
+    "oblique": {
+     "repeats": 11,
+     "placements": 91
+    },
+    "other": {
+     "repeats": 140,
+     "placements": 408
+    }
+   },
+   "stints": {
+    "hamstring": {
+     "repeats": 11,
+     "placements": 93
+    },
+    "hand_wrist": {
+     "repeats": 17,
+     "placements": 116
+    },
+    "oblique": {
+     "repeats": 8,
+     "placements": 88
+    },
+    "other": {
+     "repeats": 122,
+     "placements": 391
+    }
+   }
+  }
+ },
+ "F4a_1-14": {
+  "all": {
+   "records": [
+    -0.009203353571726632,
+    547
+   ],
+   "stints": [
+    -0.012418551876972479,
+    543
+   ]
+  },
+  "oblique": {
+   "records": [
+    -0.15090648115046335,
+    67
+   ],
+   "stints": [
+    -0.15090648115046335,
+    67
+   ]
+  },
+  "hamstring": {
+   "records": [
+    0.17428993995791792,
+    75
+   ],
+   "stints": [
+    0.17428993995791792,
+    75
+   ]
+  },
+  "hand_wrist": {
+   "records": [
+    -0.050156388735636,
+    93
+   ],
+   "stints": [
+    -0.050156388735636,
+    93
+   ]
+  },
+  "other": {
+   "records": [
+    -0.014074408157736494,
+    312
+   ],
+   "stints": [
+    -0.01995681890951069,
+    308
+   ]
+  }
+ },
+ "F4b_stints": {
+  "records": 466,
+  "stints": 466
+ },
+ "F4b_every_eligible_control": {
+  "all 1-10": {
+   "records": [
+    -0.19084968129416763,
+    463
+   ],
+   "stints": [
+    -0.1934617032332695,
+    463
+   ]
+  },
+  "all 21-40": {
+   "records": [
+    -0.039897054266319086,
+    301
+   ],
+   "stints": [
+    -0.040788971717515686,
+    300
+   ]
+  },
+  "all 41-60": {
+   "records": [
+    -0.08142122765262477,
+    190
+   ],
+   "stints": [
+    -0.08138942997970992,
+    190
+   ]
+  },
+  "oblique 1-10": {
+   "records": [
+    -0.38129951337581247,
+    59
+   ],
+   "stints": [
+    -0.38091935721680936,
+    59
+   ]
+  },
+  "oblique 21-40": {
+   "records": [
+    0.08153999777227017,
+    49
+   ],
+   "stints": [
+    0.0811531011511031,
+    49
+   ]
+  },
+  "oblique 41-60": {
+   "records": [
+    -0.26719571917791424,
+    34
+   ],
+   "stints": [
+    -0.26703653054257503,
+    34
+   ]
+  },
+  "hamstring 1-10": {
+   "records": [
+    0.06957063078280484,
+    71
+   ],
+   "stints": [
+    0.07023966885377765,
+    71
+   ]
+  },
+  "hamstring 21-40": {
+   "records": [
+    0.1175502815719294,
+    53
+   ],
+   "stints": [
+    0.11748044411705147,
+    53
+   ]
+  },
+  "hamstring 41-60": {
+   "records": [
+    0.2721345078827016,
+    35
+   ],
+   "stints": [
+    0.27202960385242225,
+    35
+   ]
+  },
+  "hand_wrist 1-10": {
+   "records": [
+    -0.5723567446729496,
+    75
+   ],
+   "stints": [
+    -0.5825563021666064,
+    76
+   ]
+  },
+  "hand_wrist 21-40": {
+   "records": [
+    -0.055082040660735056,
+    40
+   ],
+   "stints": [
+    -0.03991158328344927,
+    40
+   ]
+  },
+  "hand_wrist 41-60": {
+   "records": [
+    -0.35654698825355896,
+    21
+   ],
+   "stints": [
+    -0.35655179382700425,
+    21
+   ]
+  },
+  "other 1-10": {
+   "records": [
+    -0.10806003908966903,
+    258
+   ],
+   "stints": [
+    -0.10821503519520673,
+    257
+   ]
+  },
+  "other 21-40": {
+   "records": [
+    -0.1259833743514851,
+    159
+   ],
+   "stints": [
+    -0.13191894733243362,
+    158
+   ]
+  },
+  "other 41-60": {
+   "records": [
+    -0.08422599824519439,
+    100
+   ],
+   "stints": [
+    -0.08418198122165022,
+    100
+   ]
+  }
+ },
+ "F4b_every_eligible_control_max_abs_change": 0.015170457377285784,
+ "F4b_5_controls": {
+  "all 1-10": {
+   "records": [
+    -0.20093804717934666,
+    463
+   ],
+   "stints": [
+    -0.21680343672470426,
+    463
+   ]
+  },
+  "all 21-40": {
+   "records": [
+    -0.06143771125135037,
+    301
+   ],
+   "stints": [
+    -0.02589958695705791,
+    300
+   ]
+  },
+  "all 41-60": {
+   "records": [
+    -0.12297265440182685,
+    190
+   ],
+   "stints": [
+    -0.07141132220670143,
+    190
+   ]
+  },
+  "oblique 1-10": {
+   "records": [
+    -0.4611560550787831,
+    59
+   ],
+   "stints": [
+    -0.34886265524710397,
+    59
+   ]
+  },
+  "oblique 21-40": {
+   "records": [
+    0.014188367421601839,
+    49
+   ],
+   "stints": [
+    0.15054872065185926,
+    49
+   ]
+  },
+  "oblique 41-60": {
+   "records": [
+    -0.21776900075014283,
+    34
+   ],
+   "stints": [
+    -0.27672469231318786,
+    34
+   ]
+  },
+  "hamstring 1-10": {
+   "records": [
+    0.1387139526813284,
+    71
+   ],
+   "stints": [
+    0.06240962534607344,
+    71
+   ]
+  },
+  "hamstring 21-40": {
+   "records": [
+    0.09954044449853823,
+    53
+   ],
+   "stints": [
+    0.15839775611528473,
+    53
+   ]
+  },
+  "hamstring 41-60": {
+   "records": [
+    0.23593708013410827,
+    35
+   ],
+   "stints": [
+    0.23037471929705924,
+    35
+   ]
+  },
+  "hand_wrist 1-10": {
+   "records": [
+    -0.5593754507606118,
+    75
+   ],
+   "stints": [
+    -0.5809558270704563,
+    76
+   ]
+  },
+  "hand_wrist 21-40": {
+   "records": [
+    -0.0768343271586905,
+    40
+   ],
+   "stints": [
+    0.0025495324071282896,
+    40
+   ]
+  },
+  "hand_wrist 41-60": {
+   "records": [
+    -0.5380689220838917,
+    21
+   ],
+   "stints": [
+    -0.33051110189903343,
+    21
+   ]
+  },
+  "other 1-10": {
+   "records": [
+    -0.1307040326655724,
+    258
+   ],
+   "stints": [
+    -0.15593593418745283,
+    257
+   ]
+  },
+  "other 21-40": {
+   "records": [
+    -0.1345298840401878,
+    159
+   ],
+   "stints": [
+    -0.14964446689527652,
+    158
+   ]
+  },
+  "other 41-60": {
+   "records": [
+    -0.12919008751774308,
+    100
+   ],
+   "stints": [
+    -0.052818937161422545,
+    100
+   ]
+  }
+ }
+}

@@ -1,0 +1,49 @@
+[     4s] pitches 2141219
+[    11s] batter-games 147109 placements 712 label end 2026-09-27 covered hitters 420
+[    22s] F4a done {"diff_all_swings": -0.06431599708054075, "se_all_swings": 0.0688665641694622, "diff": -0.012418551876972479, "se": 0.04807844625398036, "p": 0.7961771645616709, "lo": -0.10665057496741867, "hi": 0.08181347121347371, "ci90": [-0.0915005585760235, 0.06666345482207854], "n_inj": 543, "equivalent_0p5": true, "inj_raw_mean": 0.06431581890698355}
+{
+ "note": "Post hoc, added after the cold read of 2026-10-17 (PLAN_ADDENDUM_2026-10-17h.md, item 10): the exclusion steps of the\nbefore-placement and after-return samples for the flow diagram (Figure 1), and the reasons the IL check found placements\nmissing from the record-date file (Supplemental Table S4).",
+ "before_placement": {
+  "placements": 712,
+  "after_label_end_or_no_games_that_season": 8,
+  "no_baseline": 91,
+  "no_window_with_5_competitive_swings": 51,
+  "with_rows": 562,
+  "days_1_14_with_20_competitive_swings": 543
+ },
+ "after_return": {
+  "placements": 712,
+  "no_activation_in_the_same_season": 62,
+  "no_games_that_season": 1,
+  "no_baseline": 86,
+  "no_game_after_return_before_a_later_placement": 97,
+  "stints": 466,
+  "with_activation_in_the_same_season": 650,
+  "with_competitive_swings_in_games_1_10": 463
+ },
+ "il_check": {
+  "missing_from_file": 22,
+  "missing_record_date_more_than_2_days_earlier": 20,
+  "missing_year_typo_in_retroactive_date": 1,
+  "missing_record_date_1_or_2_days_earlier": 1,
+  "missing_other": 0,
+  "record_date_fixes_by_effective_year": {
+   "2024": 6,
+   "2025": 12,
+   "2026": 6
+  },
+  "record_date_fixes_with_record_date_in_2023": 3,
+  "file_matched_rows": 719,
+  "file_matched_distinct_placements": 717,
+  "file_matched_same_day_duplicates": 2,
+  "mlb_placements_2024_2026": 739,
+  "corrected_file_placements": 739,
+  "early_record_records": 23,
+  "early_record_not_missing": 3,
+  "early_record_not_missing_in_file_on_effective_date": 3,
+  "early_record_not_missing_also_in_file_on_record_date": 3,
+  "file_matched_dup_listed_twice_by_mlb": 1,
+  "file_matched_dup_later_placement_on_its_record_date": 1,
+  "file_misdated_or_duplicated_total": 23
+ }
+}

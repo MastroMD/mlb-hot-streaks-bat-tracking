@@ -1,0 +1,60 @@
+{
+ "key_values_published_vs_repull": {
+  "F4a/windows/all/1-14/diff": [
+   -0.009203353571726632,
+   -0.009387044536063545
+  ],
+  "F4a/windows/oblique/1-14/diff": [
+   -0.15090648115046335,
+   -0.15085867268184633
+  ],
+  "F4b/effects/hand_wrist/bat_speed/1-10/mean": [
+   -0.5593754507606118,
+   -0.5593334400412698
+  ],
+  "F4b/effects/oblique/bat_speed/1-10/mean": [
+   -0.4611560550787831,
+   -0.46114074361147017
+  ],
+  "F4b/effects/hamstring/bat_speed/1-10/mean": [
+   0.1387139526813284,
+   0.13865855505219196
+  ],
+  "F4b/effects/other/bat_speed/1-10/mean": [
+   -0.1307040326655724,
+   -0.13042109752489564
+  ],
+  "F4b/effects_all_controls/hand_wrist/bat_speed/1-10/mean": [
+   -0.5723567446729496,
+   -0.5722919391277441
+  ],
+  "F4b/effects/hand_wrist/bat_speed/21-40/mean": [
+   -0.0768343271586905,
+   -0.07682183386781834
+  ],
+  "F4c/50/bat_speed/reliability": [
+   0.635770432358217,
+   0.6355520793099556
+  ],
+  "F4c/50/bat_speed/mdc95_two_windows": [
+   1.167666557103588,
+   1.1679205187892976
+  ],
+  "F4d/raw/bat_speed/persistence": [
+   0.2520870460626517,
+   0.2534216309007883
+  ],
+  "F4a_A8/at_risk_300pa/models/any/OR_per_minus1SD": [
+   0.942166433112516,
+   0.9421291195097803
+  ],
+  "F4b/n_stints": [
+   466,
+   466
+  ]
+ },
+ "leaf_counts": {
+  "same": 1606,
+  "diff": 3880
+ }
+}

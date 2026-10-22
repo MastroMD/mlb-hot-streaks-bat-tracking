@@ -1,0 +1,155 @@
+{
+ "note": "python3 ojsm_missing_activations.py IL_FILE STATCAST_DIR TRANSACTIONS_JSON OUT_IL OUT_JSON",
+ "il_file": "repo/results/final_2026-10-21/il_transactions_hitters_2024_2026_corrected_stints_relabeled.txt",
+ "out_il": "repo/data_public/il_transactions_hitters_2024_2026_final.txt",
+ "placements_with_games_but_no_activation": 15,
+ "by_family": {
+  "other": 8,
+  "hand_wrist": 4,
+  "oblique": 2,
+  "hamstring": 1
+ },
+ "by_category": {
+  "no transaction recorded": 6,
+  "recalled from a minor-league club": 4,
+  "activated without naming a list": 3,
+  "activated from the All-Star reserve list": 2
+ },
+ "records": [
+  {
+   "batter": 605141,
+   "placement": "240617PW10",
+   "family": "hand_wrist",
+   "first_game_after": "2024-08-12",
+   "games_before_next_placement": 44,
+   "category": "activated from the All-Star reserve list",
+   "transaction": "2024-08-12 Los Angeles Dodgers activated RF Mookie Betts from the reserve list."
+  },
+  {
+   "batter": 643217,
+   "placement": "250407PX10",
+   "family": "other",
+   "first_game_after": "2025-04-17",
+   "games_before_next_placement": 15,
+   "category": "no transaction recorded",
+   "transaction": ""
+  },
+  {
+   "batter": 664040,
+   "placement": "250708PO10",
+   "family": "oblique",
+   "first_game_after": "2025-07-18",
+   "games_before_next_placement": 2,
+   "category": "activated from the All-Star reserve list",
+   "transaction": "2025-07-18 Tampa Bay Rays activated 2B Brandon Lowe from the reserve list."
+  },
+  {
+   "batter": 665052,
+   "placement": "250420PX60",
+   "family": "other",
+   "first_game_after": "2025-09-23",
+   "games_before_next_placement": 4,
+   "category": "activated without naming a list",
+   "transaction": "2025-09-22 Miami Marlins activated LF Griffin Conine."
+  },
+  {
+   "batter": 665161,
+   "placement": "250628PX10",
+   "family": "other",
+   "first_game_after": "2025-08-01",
+   "games_before_next_placement": 43,
+   "category": "activated without naming a list",
+   "transaction": "2025-08-01 Houston Astros activated SS Jeremy Pe\u00f1a."
+  },
+  {
+   "batter": 666018,
+   "placement": "240327PW10",
+   "family": "hand_wrist",
+   "first_game_after": "2024-05-14",
+   "games_before_next_placement": 44,
+   "category": "recalled from a minor-league club",
+   "transaction": "2024-05-14 Tampa Bay Rays recalled 2B Jonathan Aranda from Durham Bulls."
+  },
+  {
+   "batter": 667472,
+   "placement": "240715PX10",
+   "family": "other",
+   "first_game_after": "2024-09-24",
+   "games_before_next_placement": 4,
+   "category": "recalled from a minor-league club",
+   "transaction": "2024-09-24 Miami Marlins recalled RF Dane Myers from Jacksonville Jumbo Shrimp."
+  },
+  {
+   "batter": 669357,
+   "placement": "250713PX10",
+   "family": "other",
+   "first_game_after": "2025-08-01",
+   "games_before_next_placement": 45,
+   "category": "no transaction recorded",
+   "transaction": ""
+  },
+  {
+   "batter": 673490,
+   "placement": "250820PX10",
+   "family": "other",
+   "first_game_after": "2025-09-02",
+   "games_before_next_placement": 24,
+   "category": "activated without naming a list",
+   "transaction": "2025-09-02 Atlanta Braves activated SS Ha-Seong Kim."
+  },
+  {
+   "batter": 680869,
+   "placement": "240424PO10",
+   "family": "oblique",
+   "first_game_after": "2024-05-14",
+   "games_before_next_placement": 113,
+   "category": "no transaction recorded",
+   "transaction": ""
+  },
+  {
+   "batter": 682626,
+   "placement": "260513PX10",
+   "family": "other",
+   "first_game_after": "2026-06-09",
+   "games_before_next_placement": 75,
+   "category": "no transaction recorded",
+   "transaction": ""
+  },
+  {
+   "batter": 683011,
+   "placement": "260322PX10",
+   "family": "other",
+   "first_game_after": "2026-05-13",
+   "games_before_next_placement": 69,
+   "category": "recalled from a minor-league club",
+   "transaction": "2026-05-12 New York Yankees recalled SS Anthony Volpe from Scranton/Wilkes-Barre RailRiders."
+  },
+  {
+   "batter": 687597,
+   "placement": "240526PW10",
+   "family": "hand_wrist",
+   "first_game_after": "2024-08-13",
+   "games_before_next_placement": 32,
+   "category": "recalled from a minor-league club",
+   "transaction": "2024-08-12 Colorado Rockies recalled OF Jordan Beck from Albuquerque Isotopes."
+  },
+  {
+   "batter": 691016,
+   "placement": "240710PW10",
+   "family": "hand_wrist",
+   "first_game_after": "2024-09-14",
+   "games_before_next_placement": 12,
+   "category": "no transaction recorded",
+   "transaction": ""
+  },
+  {
+   "batter": 805779,
+   "placement": "240720PH10",
+   "family": "hamstring",
+   "first_game_after": "2024-08-27",
+   "games_before_next_placement": 26,
+   "category": "no transaction recorded",
+   "transaction": ""
+  }
+ ]
+}

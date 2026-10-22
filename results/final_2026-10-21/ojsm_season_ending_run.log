@@ -1,0 +1,32 @@
+{
+ "placements": 688,
+ "all": {
+  "placements": 688,
+  "season_ending_n": 133,
+  "season_ending_share": 0.1933139534883721,
+  "stint_median": 24.0,
+  "stint_q1": 13.0,
+  "stint_q3": 41.0,
+  "stint_n": 554
+ },
+ "all_ajsm_season_rule": {
+  "placements": 688,
+  "season_ending_n": 78,
+  "season_ending_share": 0.11337209302325581,
+  "stint_median": 23.0,
+  "stint_q1": 13.0,
+  "stint_q3": 40.0,
+  "stint_n": 610
+ },
+ "changed_by_reason": {
+  "activated after the last regular-season game, before October 1": 56,
+  "no activation before the next placement record (the hitter did not play); activated later that season": 1
+ },
+ "stints_no_longer_counted": 56,
+ "mid_season_activation_without_further_games": 5,
+ "last_regular_season_game": {
+  "2024": "2024-09-30",
+  "2025": "2025-09-28",
+  "2026": "2026-09-27"
+ }
+}

@@ -1,0 +1,311 @@
+{
+ "raw_lines": 2026,
+ "mlb_placements_2023_2026": 896,
+ "mlb_placements_by_year": {
+  "2023": 157,
+  "2024": 199,
+  "2025": 279,
+  "2026": 261
+ },
+ "placements_text_filled_from_transfer": 0,
+ "placements_without_injury_text": 18,
+ "file_placements": 740,
+ "file_matched_same_day": 719,
+ "file_unmatched": 21,
+ "file_unmatched_with_placement_within_3_days": 1,
+ "family_disagreements": 1,
+ "family_disagreement_examples": [
+  {
+   "batter": "645277",
+   "day": "2025-09-23",
+   "fam_file": "X",
+   "fam4_from_text": "W",
+   "text": "Fractured left hammate"
+  }
+ ],
+ "family_confusion": {
+  "H": {
+   "H": 94,
+   "O": 0,
+   "W": 0,
+   "X": 0
+  },
+  "O": {
+   "H": 0,
+   "O": 93,
+   "W": 0,
+   "X": 0
+  },
+  "W": {
+   "H": 0,
+   "O": 0,
+   "W": 122,
+   "X": 1
+  },
+  "X": {
+   "H": 0,
+   "O": 0,
+   "W": 0,
+   "X": 409
+  }
+ },
+ "api_placements_2024_2026_missing_from_file": 22,
+ "missing_examples": [
+  {
+   "batter": "543309",
+   "day": "2026-07-21",
+   "text": ""
+  },
+  {
+   "batter": "571771",
+   "day": "2025-07-07",
+   "text": "Left elbow inflammation"
+  },
+  {
+   "batter": "575929",
+   "day": "2024-08-25",
+   "text": "Right middle finger fracture"
+  },
+  {
+   "batter": "592669",
+   "day": "2024-06-11",
+   "text": "Left big toe fracture"
+  },
+  {
+   "batter": "592669",
+   "day": "2024-08-25",
+   "text": "Right hamstring strain"
+  },
+  {
+   "batter": "602104",
+   "day": "2024-09-01",
+   "text": "Right ankle sprain"
+  },
+  {
+   "batter": "624424",
+   "day": "2024-05-12",
+   "text": "Right hamstring strain"
+  },
+  {
+   "batter": "643396",
+   "day": "2025-05-01",
+   "text": "Right hamstring strain"
+  },
+  {
+   "batter": "646240",
+   "day": "2026-09-13",
+   "text": "Core muscle injury"
+  },
+  {
+   "batter": "663457",
+   "day": "2026-03-25",
+   "text": "Bilateral Haglund's Deformity excision"
+  },
+  {
+   "batter": "665804",
+   "day": "2025-05-25",
+   "text": "Left oblique strain"
+  },
+  {
+   "batter": "668904",
+   "day": "2026-04-10",
+   "text": "Left knee sprain"
+  },
+  {
+   "batter": "669720",
+   "day": "2025-05-30",
+   "text": "Left foot contusion"
+  },
+  {
+   "batter": "678246",
+   "day": "2025-08-29",
+   "text": "Left hand sprain"
+  },
+  {
+   "batter": "680700",
+   "day": "2025-07-10",
+   "text": ""
+  },
+  {
+   "batter": "680718",
+   "day": "2026-04-06",
+   "text": "Left ankle sprain"
+  },
+  {
+   "batter": "681351",
+   "day": "2025-09-08",
+   "text": "Concussion"
+  },
+  {
+   "batter": "681460",
+   "day": "2025-07-09",
+   "text": ""
+  },
+  {
+   "batter": "683357",
+   "day": "2025-09-14",
+   "text": "Convussion"
+  },
+  {
+   "batter": "691026",
+   "day": "2026-08-22",
+   "text": "Left thumb fracture"
+  },
+  {
+   "batter": "701538",
+   "day": "2025-06-15",
+   "text": "Concussion"
+  },
+  {
+   "batter": "805779",
+   "day": "2025-07-26",
+   "text": "Fractured right forearm"
+  }
+ ],
+ "unmatched_file_examples": [
+  {
+   "batter": "543309",
+   "day": "2026-04-16",
+   "fam_file": "X"
+  },
+  {
+   "batter": "571771",
+   "day": "2025-04-16",
+   "fam_file": "X"
+  },
+  {
+   "batter": "575929",
+   "day": "2024-06-24",
+   "fam_file": "W"
+  },
+  {
+   "batter": "592626",
+   "day": "2025-04-16",
+   "fam_file": "W"
+  },
+  {
+   "batter": "592669",
+   "day": "2024-08-21",
+   "fam_file": "H"
+  },
+  {
+   "batter": "641584",
+   "day": "2024-07-10",
+   "fam_file": "X"
+  },
+  {
+   "batter": "643396",
+   "day": "2025-04-16",
+   "fam_file": "H"
+  },
+  {
+   "batter": "646240",
+   "day": "2026-04-16",
+   "fam_file": "X"
+  },
+  {
+   "batter": "663457",
+   "day": "2025-08-02",
+   "fam_file": "X"
+  },
+  {
+   "batter": "663837",
+   "day": "2025-06-28",
+   "fam_file": "X"
+  },
+  {
+   "batter": "665804",
+   "day": "2025-04-16",
+   "fam_file": "O"
+  },
+  {
+   "batter": "665833",
+   "day": "2026-07-18",
+   "fam_file": "W"
+  },
+  {
+   "batter": "669720",
+   "day": "2025-05-09",
+   "fam_file": "X"
+  },
+  {
+   "batter": "678246",
+   "day": "2025-08-12",
+   "fam_file": "W"
+  },
+  {
+   "batter": "680718",
+   "day": "2026-03-07",
+   "fam_file": "X"
+  },
+  {
+   "batter": "681351",
+   "day": "2025-04-16",
+   "fam_file": "X"
+  },
+  {
+   "batter": "681460",
+   "day": "2025-07-01",
+   "fam_file": "X"
+  },
+  {
+   "batter": "683357",
+   "day": "2025-09-13",
+   "fam_file": "X"
+  },
+  {
+   "batter": "691026",
+   "day": "2026-04-16",
+   "fam_file": "W"
+  },
+  {
+   "batter": "701538",
+   "day": "2025-05-06",
+   "fam_file": "X"
+  },
+  {
+   "batter": "805779",
+   "day": "2025-04-16",
+   "fam_file": "X"
+  }
+ ],
+ "region_counts_2024_2026": {
+  "hand_wrist": 125,
+  "oblique_abdominal": 100,
+  "hamstring": 97,
+  "leg_ankle_foot": 96,
+  "back_neck": 54,
+  "shoulder": 50,
+  "hip_groin": 49,
+  "knee": 44,
+  "head_face": 39,
+  "elbow_forearm_arm": 34,
+  "thigh_quad": 17,
+  "unspecified": 16,
+  "chest_rib": 14,
+  "illness": 4
+ },
+ "mechanism_counts_2024_2026": {
+  "muscle_strain": 299,
+  "inflammatory_overuse": 142,
+  "ligament_joint": 96,
+  "fracture": 83,
+  "impact": 73,
+  "surgery": 18,
+  "unspecified": 16,
+  "illness": 7,
+  "other": 5
+ },
+ "impact_share_2024_2026": 0.21109607577807848,
+ "date_fixes_mlb_placements": {
+  "none": 872,
+  "record date earlier than effective date (effective date used)": 23,
+  "year typo in stated retroactive date (corrected)": 1
+ },
+ "corrected_il_file": {
+  "path": "data_public/il_transactions_hitters_2024_2026_corrected.txt",
+  "placements": 739,
+  "activations": 661,
+  "hitters": 311
+ }
+}
